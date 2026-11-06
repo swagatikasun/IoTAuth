@@ -1,0 +1,74 @@
+[
+  {
+    "n": 100,
+    "t": 30,
+    "rule": "static committee",
+    "fail_random": 0.0,
+    "fail_mobile": 1.0,
+    "overlap": 1.0,
+    "max_leader_share": 0.036
+  },
+  {
+    "n": 100,
+    "t": 30,
+    "rule": "merit-only top-K",
+    "fail_random": 0.0,
+    "fail_mobile": 1.0,
+    "overlap": 0.9856427684183924,
+    "max_leader_share": 0.035333333333333335
+  },
+  {
+    "n": 100,
+    "t": 30,
+    "rule": "uniform VRF",
+    "fail_random": 0.2843333333333333,
+    "fail_mobile": 0.2781666666666667,
+    "overlap": 0.3123638886050901,
+    "max_leader_share": 0.013166666666666667
+  },
+  {
+    "n": 100,
+    "t": 30,
+    "rule": "VRF + rest (ours)",
+    "fail_random": 0.2781666666666667,
+    "fail_mobile": 0.9965,
+    "overlap": 0.0,
+    "max_leader_share": 0.013
+  },
+  {
+    "n": 200,
+    "t": 60,
+    "rule": "static committee",
+    "fail_random": 0.0,
+    "fail_mobile": 0.9998333333333334,
+    "overlap": 1.0,
+    "max_leader_share": 0.0365
+  },
+  {
+    "n": 200,
+    "t": 60,
+    "rule": "merit-only top-K",
+    "fail_random": 0.0,
+    "fail_mobile": 1.0,
+    "overlap": 0.9455178013539892,
+    "max_leader_share": 0.035666666666666666
+  },
+  {
+    "n": 200,
+    "t": 60,
+    "rule": "uniform VRF",
+    "fail_random": 0.306,
+    "fail_mobile": 0.29483333333333334,
+    "overlap": 0.15467093978028595,
+    "max_leader_share": 0.0075
+  },
+  {
+    "n": 200,
+    "t": 60,
+    "rule": "VRF + rest (ours)",
+    "fail_random": 0.304,
+    "fail_mobile": 0.9846666666666667,
+    "overlap": 0.0,
+    "max_leader_share": 0.007666666666666666
+  }
+]

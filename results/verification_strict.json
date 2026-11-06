@@ -1,0 +1,1005 @@
+{
+  "runs": {
+    "centralized": [
+      {
+        "eer_pooled_all": 0.10280645161290322,
+        "eer_pooled_known": 0.04505555555555556,
+        "eer_pooled_unseen": 0.10943452380952381,
+        "eer_per_subject_mean": 0.09334408602150537,
+        "eer_per_subject_std": 0.03848212538140028,
+        "frr_at_far_1pct": 0.833,
+        "frr_at_far_0.1pct": 0.985,
+        "thresholds": {
+          "theta1": 49.583878528561584,
+          "theta2": 9.951904354782355,
+          "theta3": -0.14173240167460274
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0002380952380952381,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00011111111111111112,
+          "far_unseen": 0.0031666666666666666,
+          "frr": 0.964
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.011222222222222222,
+          "far_unseen": 0.08277380952380953,
+          "frr": 0.166
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.036,
+          "high": 0.798,
+          "critical": 0.166
+        },
+        "levels_impostor": {
+          "low": 0.00021505376344086021,
+          "medium": 0.0026559139784946236,
+          "high": 0.07297849462365591,
+          "critical": 0.9241505376344086
+        },
+        "seed": 0
+      },
+      {
+        "eer_pooled_all": 0.09926344086021505,
+        "eer_pooled_known": 0.03894444444444445,
+        "eer_pooled_unseen": 0.10538690476190476,
+        "eer_per_subject_mean": 0.0961236559139785,
+        "eer_per_subject_std": 0.050576194680678054,
+        "frr_at_far_1pct": 0.906,
+        "frr_at_far_0.1pct": 1.0,
+        "thresholds": {
+          "theta1": 30.85053303648366,
+          "theta2": 8.346992624368315,
+          "theta3": -0.23684934395972376
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0015119047619047618,
+          "frr": 0.995
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00011111111111111112,
+          "far_unseen": 0.008285714285714285,
+          "frr": 0.94
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.010666666666666666,
+          "far_unseen": 0.09738095238095239,
+          "frr": 0.125
+        },
+        "levels_genuine": {
+          "low": 0.005,
+          "medium": 0.055,
+          "high": 0.815,
+          "critical": 0.125
+        },
+        "levels_impostor": {
+          "low": 0.0013655913978494623,
+          "medium": 0.006129032258064516,
+          "high": 0.08149462365591398,
+          "critical": 0.911010752688172
+        },
+        "seed": 1
+      },
+      {
+        "eer_pooled_all": 0.11240860215053763,
+        "eer_pooled_known": 0.047,
+        "eer_pooled_unseen": 0.1200654761904762,
+        "eer_per_subject_mean": 0.11073118279569891,
+        "eer_per_subject_std": 0.051679779701688265,
+        "frr_at_far_1pct": 0.933,
+        "frr_at_far_0.1pct": 0.996,
+        "thresholds": {
+          "theta1": 55.740008364308,
+          "theta2": 8.714459616975445,
+          "theta3": -0.49526806320170647
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0002619047619047619,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00044444444444444447,
+          "far_unseen": 0.009607142857142857,
+          "frr": 0.95
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.014888888888888889,
+          "far_unseen": 0.1175,
+          "frr": 0.125
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.05,
+          "high": 0.825,
+          "critical": 0.125
+        },
+        "levels_impostor": {
+          "low": 0.00023655913978494624,
+          "medium": 0.008483870967741936,
+          "high": 0.0988494623655914,
+          "critical": 0.8924301075268817
+        },
+        "seed": 2
+      },
+      {
+        "eer_pooled_all": 0.10836559139784946,
+        "eer_pooled_known": 0.04422222222222222,
+        "eer_pooled_unseen": 0.11576190476190476,
+        "eer_per_subject_mean": 0.10370430107526882,
+        "eer_per_subject_std": 0.057871690227366164,
+        "frr_at_far_1pct": 0.884,
+        "frr_at_far_0.1pct": 0.985,
+        "thresholds": {
+          "theta1": 45.68133157093955,
+          "theta2": 9.545462368302958,
+          "theta3": -0.40481823056577115
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0002619047619047619,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00011111111111111112,
+          "far_unseen": 0.0035833333333333333,
+          "frr": 0.962
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.012666666666666666,
+          "far_unseen": 0.10923809523809523,
+          "frr": 0.129
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.038,
+          "high": 0.833,
+          "critical": 0.129
+        },
+        "levels_impostor": {
+          "low": 0.00023655913978494624,
+          "medium": 0.003010752688172043,
+          "high": 0.09664516129032258,
+          "critical": 0.9001075268817205
+        },
+        "seed": 3
+      },
+      {
+        "eer_pooled_all": 0.10381720430107527,
+        "eer_pooled_known": 0.05227777777777778,
+        "eer_pooled_unseen": 0.11070238095238095,
+        "eer_per_subject_mean": 0.10220967741935483,
+        "eer_per_subject_std": 0.04335984307448653,
+        "frr_at_far_1pct": 0.945,
+        "frr_at_far_0.1pct": 0.999,
+        "thresholds": {
+          "theta1": 43.34365628424293,
+          "theta2": 7.6636652829108325,
+          "theta3": -0.19908966881102472
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.000619047619047619,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00011111111111111112,
+          "far_unseen": 0.009904761904761904,
+          "frr": 0.949
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.011666666666666667,
+          "far_unseen": 0.09061904761904761,
+          "frr": 0.159
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.051,
+          "high": 0.79,
+          "critical": 0.159
+        },
+        "levels_impostor": {
+          "low": 0.0005591397849462365,
+          "medium": 0.008397849462365591,
+          "high": 0.07402150537634408,
+          "critical": 0.9170215053763441
+        },
+        "seed": 4
+      }
+    ],
+    "fedavg": [
+      {
+        "eer_pooled_all": 0.10280645161290322,
+        "eer_pooled_known": 0.04505555555555556,
+        "eer_pooled_unseen": 0.10943452380952381,
+        "eer_per_subject_mean": 0.09334408602150537,
+        "eer_per_subject_std": 0.03848212538140028,
+        "frr_at_far_1pct": 0.833,
+        "frr_at_far_0.1pct": 0.985,
+        "thresholds": {
+          "theta1": 49.58387852856159,
+          "theta2": 9.951904354782354,
+          "theta3": -0.14173240167459653
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0002380952380952381,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00011111111111111112,
+          "far_unseen": 0.0031666666666666666,
+          "frr": 0.964
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.011222222222222222,
+          "far_unseen": 0.08277380952380953,
+          "frr": 0.166
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.036,
+          "high": 0.798,
+          "critical": 0.166
+        },
+        "levels_impostor": {
+          "low": 0.00021505376344086021,
+          "medium": 0.0026559139784946236,
+          "high": 0.07297849462365591,
+          "critical": 0.9241505376344086
+        },
+        "seed": 0
+      },
+      {
+        "eer_pooled_all": 0.09926344086021505,
+        "eer_pooled_known": 0.03894444444444445,
+        "eer_pooled_unseen": 0.10538690476190476,
+        "eer_per_subject_mean": 0.0961236559139785,
+        "eer_per_subject_std": 0.050576194680678054,
+        "frr_at_far_1pct": 0.906,
+        "frr_at_far_0.1pct": 1.0,
+        "thresholds": {
+          "theta1": 30.85053303648363,
+          "theta2": 8.346992624368333,
+          "theta3": -0.23684934395972554
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0015119047619047618,
+          "frr": 0.995
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00011111111111111112,
+          "far_unseen": 0.008285714285714285,
+          "frr": 0.94
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.010666666666666666,
+          "far_unseen": 0.09738095238095239,
+          "frr": 0.125
+        },
+        "levels_genuine": {
+          "low": 0.005,
+          "medium": 0.055,
+          "high": 0.815,
+          "critical": 0.125
+        },
+        "levels_impostor": {
+          "low": 0.0013655913978494623,
+          "medium": 0.006129032258064516,
+          "high": 0.08149462365591398,
+          "critical": 0.911010752688172
+        },
+        "seed": 1
+      },
+      {
+        "eer_pooled_all": 0.11240860215053763,
+        "eer_pooled_known": 0.047,
+        "eer_pooled_unseen": 0.1200654761904762,
+        "eer_per_subject_mean": 0.11073118279569891,
+        "eer_per_subject_std": 0.051679779701688265,
+        "frr_at_far_1pct": 0.933,
+        "frr_at_far_0.1pct": 0.996,
+        "thresholds": {
+          "theta1": 55.740008364307975,
+          "theta2": 8.714459616975448,
+          "theta3": -0.4952680632017069
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0002619047619047619,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00044444444444444447,
+          "far_unseen": 0.009607142857142857,
+          "frr": 0.95
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.014888888888888889,
+          "far_unseen": 0.1175,
+          "frr": 0.125
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.05,
+          "high": 0.825,
+          "critical": 0.125
+        },
+        "levels_impostor": {
+          "low": 0.00023655913978494624,
+          "medium": 0.008483870967741936,
+          "high": 0.0988494623655914,
+          "critical": 0.8924301075268817
+        },
+        "seed": 2
+      },
+      {
+        "eer_pooled_all": 0.10836559139784946,
+        "eer_pooled_known": 0.04422222222222222,
+        "eer_pooled_unseen": 0.11576190476190476,
+        "eer_per_subject_mean": 0.10370430107526882,
+        "eer_per_subject_std": 0.057871690227366164,
+        "frr_at_far_1pct": 0.884,
+        "frr_at_far_0.1pct": 0.985,
+        "thresholds": {
+          "theta1": 45.681331570939655,
+          "theta2": 9.545462368302955,
+          "theta3": -0.4048182305657738
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0002619047619047619,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00011111111111111112,
+          "far_unseen": 0.0035833333333333333,
+          "frr": 0.962
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.012666666666666666,
+          "far_unseen": 0.10923809523809523,
+          "frr": 0.129
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.038,
+          "high": 0.833,
+          "critical": 0.129
+        },
+        "levels_impostor": {
+          "low": 0.00023655913978494624,
+          "medium": 0.003010752688172043,
+          "high": 0.09664516129032258,
+          "critical": 0.9001075268817205
+        },
+        "seed": 3
+      },
+      {
+        "eer_pooled_all": 0.10381720430107527,
+        "eer_pooled_known": 0.05227777777777778,
+        "eer_pooled_unseen": 0.11070238095238095,
+        "eer_per_subject_mean": 0.10220967741935483,
+        "eer_per_subject_std": 0.04335984307448653,
+        "frr_at_far_1pct": 0.945,
+        "frr_at_far_0.1pct": 0.999,
+        "thresholds": {
+          "theta1": 43.34365628424294,
+          "theta2": 7.663665282910836,
+          "theta3": -0.1990896688110256
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.000619047619047619,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00011111111111111112,
+          "far_unseen": 0.009904761904761904,
+          "frr": 0.949
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.011666666666666667,
+          "far_unseen": 0.09061904761904761,
+          "frr": 0.159
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.051,
+          "high": 0.79,
+          "critical": 0.159
+        },
+        "levels_impostor": {
+          "low": 0.0005591397849462365,
+          "medium": 0.008397849462365591,
+          "high": 0.07402150537634408,
+          "critical": 0.9170215053763441
+        },
+        "seed": 4
+      }
+    ],
+    "fedavg_he": [
+      {
+        "eer_pooled_all": 0.10305913978494624,
+        "eer_pooled_known": 0.043111111111111114,
+        "eer_pooled_unseen": 0.10867857142857143,
+        "eer_per_subject_mean": 0.09397311827956989,
+        "eer_per_subject_std": 0.04300099654135406,
+        "frr_at_far_1pct": 0.885,
+        "frr_at_far_0.1pct": 1.0,
+        "thresholds": {
+          "theta1": 22.067449360400932,
+          "theta2": 4.636884001942911,
+          "theta3": 0.052724209920815966
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.00034523809523809523,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00022222222222222223,
+          "far_unseen": 0.003833333333333333,
+          "frr": 0.993
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.008222222222222223,
+          "far_unseen": 0.07623809523809524,
+          "frr": 0.193
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.007,
+          "high": 0.8,
+          "critical": 0.193
+        },
+        "levels_impostor": {
+          "low": 0.0003118279569892473,
+          "medium": 0.003172043010752688,
+          "high": 0.06617204301075269,
+          "critical": 0.9303440860215054
+        },
+        "seed": 0
+      },
+      {
+        "eer_pooled_all": 0.10836559139784946,
+        "eer_pooled_known": 0.0395,
+        "eer_pooled_unseen": 0.11399404761904762,
+        "eer_per_subject_mean": 0.10658602150537633,
+        "eer_per_subject_std": 0.05177981104866008,
+        "frr_at_far_1pct": 0.963,
+        "frr_at_far_0.1pct": 1.0,
+        "thresholds": {
+          "theta1": 16.714913491381036,
+          "theta2": 3.9830370933601476,
+          "theta3": -0.02699355098083598
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0013095238095238095,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00022222222222222223,
+          "far_unseen": 0.007952380952380952,
+          "frr": 0.987
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.009222222222222222,
+          "far_unseen": 0.09742857142857143,
+          "frr": 0.152
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.013,
+          "high": 0.835,
+          "critical": 0.152
+        },
+        "levels_impostor": {
+          "low": 0.0011827956989247312,
+          "medium": 0.006021505376344086,
+          "high": 0.08168817204301075,
+          "critical": 0.9111075268817205
+        },
+        "seed": 1
+      },
+      {
+        "eer_pooled_all": 0.121,
+        "eer_pooled_known": 0.04394444444444444,
+        "eer_pooled_unseen": 0.1281607142857143,
+        "eer_per_subject_mean": 0.11267741935483873,
+        "eer_per_subject_std": 0.05004613318601619,
+        "frr_at_far_1pct": 0.978,
+        "frr_at_far_0.1pct": 1.0,
+        "thresholds": {
+          "theta1": 30.01657082863334,
+          "theta2": 3.897900667290399,
+          "theta3": -0.13068460676571467
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.00011111111111111112,
+          "far_unseen": 0.00034523809523809523,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.0003333333333333333,
+          "far_unseen": 0.009273809523809524,
+          "frr": 0.988
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.012222222222222223,
+          "far_unseen": 0.1165952380952381,
+          "frr": 0.152
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.012,
+          "high": 0.836,
+          "critical": 0.152
+        },
+        "levels_impostor": {
+          "low": 0.0003225806451612903,
+          "medium": 0.008086021505376344,
+          "high": 0.09808602150537635,
+          "critical": 0.893505376344086
+        },
+        "seed": 2
+      },
+      {
+        "eer_pooled_all": 0.11417741935483872,
+        "eer_pooled_known": 0.042,
+        "eer_pooled_unseen": 0.12082142857142858,
+        "eer_per_subject_mean": 0.1069731182795699,
+        "eer_per_subject_std": 0.056872247773151405,
+        "frr_at_far_1pct": 0.951,
+        "frr_at_far_0.1pct": 1.0,
+        "thresholds": {
+          "theta1": 23.90809566878932,
+          "theta2": 4.526740188224177,
+          "theta3": -0.11429608500354846
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0003214285714285714,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.00011111111111111112,
+          "far_unseen": 0.004107142857142857,
+          "frr": 0.993
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.01011111111111111,
+          "far_unseen": 0.10948809523809523,
+          "frr": 0.15
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.007,
+          "high": 0.843,
+          "critical": 0.15
+        },
+        "levels_impostor": {
+          "low": 0.00029032258064516127,
+          "medium": 0.0034301075268817205,
+          "high": 0.0961505376344086,
+          "critical": 0.9001290322580645
+        },
+        "seed": 3
+      },
+      {
+        "eer_pooled_all": 0.1139247311827957,
+        "eer_pooled_known": 0.05283333333333333,
+        "eer_pooled_unseen": 0.11829166666666666,
+        "eer_per_subject_mean": 0.10468817204301073,
+        "eer_per_subject_std": 0.04230653872475546,
+        "frr_at_far_1pct": 0.972,
+        "frr_at_far_0.1pct": 1.0,
+        "thresholds": {
+          "theta1": 18.08310891961142,
+          "theta2": 3.59259471917216,
+          "theta3": -0.006449131622924131
+        },
+        "operational_theta1": {
+          "target_far": 0.001,
+          "far_known": 0.0,
+          "far_unseen": 0.0007023809523809524,
+          "frr": 1.0
+        },
+        "operational_theta2": {
+          "target_far": 0.01,
+          "far_known": 0.0,
+          "far_unseen": 0.00894047619047619,
+          "frr": 0.982
+        },
+        "operational_theta3": {
+          "target_far": 0.1,
+          "far_known": 0.009777777777777778,
+          "far_unseen": 0.08916666666666667,
+          "frr": 0.173
+        },
+        "levels_genuine": {
+          "low": 0.0,
+          "medium": 0.018,
+          "high": 0.809,
+          "critical": 0.173
+        },
+        "levels_impostor": {
+          "low": 0.0006344086021505376,
+          "medium": 0.0074408602150537635,
+          "high": 0.07340860215053764,
+          "critical": 0.9185161290322581
+        },
+        "seed": 4
+      }
+    ]
+  },
+  "summary": {
+    "centralized": {
+      "eer_pooled_all": [
+        0.10533225806451614,
+        0.005118138947196264
+      ],
+      "eer_pooled_known": [
+        0.0455,
+        0.004821665354431334
+      ],
+      "eer_pooled_unseen": [
+        0.11227023809523809,
+        0.005719204542175256
+      ],
+      "eer_per_subject_mean": [
+        0.10122258064516129,
+        0.006812057731355621
+      ],
+      "frr_at_far_1pct": [
+        0.9001999999999999,
+        0.04442634353623985
+      ],
+      "frr_at_far_0.1pct": [
+        0.993,
+        0.007449832212875677
+      ],
+      "genuine_low": [
+        0.001,
+        0.00223606797749979
+      ],
+      "impostor_low": [
+        0.0005225806451612904,
+        0.0004924918999095023
+      ],
+      "genuine_medium": [
+        0.046,
+        0.008455767262643882
+      ],
+      "impostor_medium": [
+        0.005735483870967742,
+        0.002815342485830397
+      ],
+      "genuine_high": [
+        0.8122,
+        0.018019433953373746
+      ],
+      "impostor_high": [
+        0.0847978494623656,
+        0.01229374499616594
+      ],
+      "genuine_critical": [
+        0.1408,
+        0.020029977533686853
+      ],
+      "impostor_critical": [
+        0.9089440860215054,
+        0.01276272157841354
+      ],
+      "threshold_theta1": [
+        45.03988155690715,
+        9.216383128741912
+      ],
+      "theta1_far_known": [
+        0.0,
+        0.0
+      ],
+      "theta1_far_unseen": [
+        0.0005785714285714285,
+        0.0005452588891855204
+      ],
+      "theta1_frr": [
+        0.999,
+        0.0022360679774997916
+      ],
+      "threshold_theta2": [
+        8.844496849467982,
+        0.9187610361005659
+      ],
+      "theta2_far_known": [
+        0.00017777777777777779,
+        0.00014907119849998598
+      ],
+      "theta2_far_unseen": [
+        0.00690952380952381,
+        0.003286906702194974
+      ],
+      "theta2_frr": [
+        0.953,
+        0.009949874371066208
+      ],
+      "threshold_theta3": [
+        -0.29555154164256575,
+        0.14852362357161478
+      ],
+      "theta3_far_known": [
+        0.012222222222222221,
+        0.0016611018208584503
+      ],
+      "theta3_far_unseen": [
+        0.09950238095238095,
+        0.013981752361309023
+      ],
+      "theta3_frr": [
+        0.1408,
+        0.020029977533686853
+      ]
+    },
+    "fedavg": {
+      "eer_pooled_all": [
+        0.10533225806451614,
+        0.005118138947196264
+      ],
+      "eer_pooled_known": [
+        0.0455,
+        0.004821665354431334
+      ],
+      "eer_pooled_unseen": [
+        0.11227023809523809,
+        0.005719204542175256
+      ],
+      "eer_per_subject_mean": [
+        0.10122258064516129,
+        0.006812057731355621
+      ],
+      "frr_at_far_1pct": [
+        0.9001999999999999,
+        0.04442634353623985
+      ],
+      "frr_at_far_0.1pct": [
+        0.993,
+        0.007449832212875677
+      ],
+      "genuine_low": [
+        0.001,
+        0.00223606797749979
+      ],
+      "impostor_low": [
+        0.0005225806451612904,
+        0.0004924918999095023
+      ],
+      "genuine_medium": [
+        0.046,
+        0.008455767262643882
+      ],
+      "impostor_medium": [
+        0.005735483870967742,
+        0.002815342485830397
+      ],
+      "genuine_high": [
+        0.8122,
+        0.018019433953373746
+      ],
+      "impostor_high": [
+        0.0847978494623656,
+        0.01229374499616594
+      ],
+      "genuine_critical": [
+        0.1408,
+        0.020029977533686853
+      ],
+      "impostor_critical": [
+        0.9089440860215054,
+        0.01276272157841354
+      ],
+      "threshold_theta1": [
+        45.03988155690716,
+        9.216383128741919
+      ],
+      "theta1_far_known": [
+        0.0,
+        0.0
+      ],
+      "theta1_far_unseen": [
+        0.0005785714285714285,
+        0.0005452588891855204
+      ],
+      "theta1_frr": [
+        0.999,
+        0.0022360679774997916
+      ],
+      "threshold_theta2": [
+        8.844496849467985,
+        0.918761036100561
+      ],
+      "theta2_far_known": [
+        0.00017777777777777779,
+        0.00014907119849998598
+      ],
+      "theta2_far_unseen": [
+        0.00690952380952381,
+        0.003286906702194974
+      ],
+      "theta2_frr": [
+        0.953,
+        0.009949874371066208
+      ],
+      "threshold_theta3": [
+        -0.2955515416425657,
+        0.14852362357161672
+      ],
+      "theta3_far_known": [
+        0.012222222222222221,
+        0.0016611018208584503
+      ],
+      "theta3_far_unseen": [
+        0.09950238095238095,
+        0.013981752361309023
+      ],
+      "theta3_frr": [
+        0.1408,
+        0.020029977533686853
+      ]
+    },
+    "fedavg_he": {
+      "eer_pooled_all": [
+        0.11210537634408602,
+        0.006755333662668052
+      ],
+      "eer_pooled_known": [
+        0.04427777777777777,
+        0.005066684941487508
+      ],
+      "eer_pooled_unseen": [
+        0.11798928571428571,
+        0.007318158144901413
+      ],
+      "eer_per_subject_mean": [
+        0.1049795698924731,
+        0.006838104600607346
+      ],
+      "frr_at_far_1pct": [
+        0.9498,
+        0.03762578902827154
+      ],
+      "frr_at_far_0.1pct": [
+        1.0,
+        0.0
+      ],
+      "genuine_low": [
+        0.0,
+        0.0
+      ],
+      "impostor_low": [
+        0.0005483870967741936,
+        0.0003819096910790977
+      ],
+      "genuine_medium": [
+        0.011399999999999999,
+        0.00461519230368573
+      ],
+      "impostor_medium": [
+        0.00563010752688172,
+        0.0022553055341518577
+      ],
+      "genuine_high": [
+        0.8246,
+        0.01887591057406234
+      ],
+      "impostor_high": [
+        0.0831010752688172,
+        0.013940673814527486
+      ],
+      "genuine_critical": [
+        0.164,
+        0.018748333259252677
+      ],
+      "impostor_critical": [
+        0.9107204301075269,
+        0.014616312988845952
+      ],
+      "threshold_theta1": [
+        22.158027653763206,
+        5.269252740911428
+      ],
+      "theta1_far_known": [
+        2.2222222222222223e-05,
+        4.9690399499995334e-05
+      ],
+      "theta1_far_unseen": [
+        0.0006047619047619048,
+        0.0004246180089383153
+      ],
+      "theta1_frr": [
+        1.0,
+        0.0
+      ],
+      "threshold_theta2": [
+        4.127431333997959,
+        0.441184148113515
+      ],
+      "theta2_far_known": [
+        0.00017777777777777779,
+        0.00012668615834434866
+      ],
+      "theta2_far_unseen": [
+        0.006821428571428571,
+        0.002649511677936007
+      ],
+      "theta2_frr": [
+        0.9885999999999999,
+        0.004615192303685734
+      ],
+      "threshold_theta3": [
+        -0.04513983289044145,
+        0.07665527433057365
+      ],
+      "theta3_far_known": [
+        0.009911111111111112,
+        0.001476983913751765
+      ],
+      "theta3_far_unseen": [
+        0.09778333333333333,
+        0.016042594062776708
+      ],
+      "theta3_frr": [
+        0.164,
+        0.018748333259252677
+      ]
+    }
+  }
+}

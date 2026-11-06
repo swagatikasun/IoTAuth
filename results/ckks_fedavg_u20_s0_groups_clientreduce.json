@@ -1,0 +1,68 @@
+{
+  "config": {
+    "users": 20,
+    "seed": 0,
+    "rounds": 1,
+    "batch_rounds": 1,
+    "resume": false,
+    "partition": "groups",
+    "clients": 5,
+    "users_per_client": 2,
+    "alpha": 0.5,
+    "mu": 0.25,
+    "gamma": 0.07,
+    "beta": 0.9,
+    "act": "linear",
+    "a": 8.0,
+    "reduce": "client",
+    "depth": 4,
+    "ring": 32768
+  },
+  "ring": 32768,
+  "log2_q": 279.5849643447745,
+  "layout": {
+    "segment": 2048,
+    "features_per_ct": 8,
+    "cts_per_client": 27
+  },
+  "client_encryption_seconds": 10.376392602920532,
+  "rounds_done": 1,
+  "timing_totals": {
+    "client_eval": 215.3995521068573,
+    "reduce": 813.0119037628174,
+    "decrypt": 0.04046273231506348,
+    "per_client_seconds": [
+      211.42697644233704,
+      235.43947291374207,
+      214.7096016407013,
+      211.8460865020752,
+      219.22722101211548
+    ],
+    "upload_bytes_per_client": 1574407
+  },
+  "log": [
+    {
+      "round": 1,
+      "seconds": 1092.7304635047913,
+      "accuracy": 0.785
+    }
+  ],
+  "final_encrypted": {
+    "accuracy": 0.785,
+    "macro_recall": 0.7849999999999999,
+    "macro_precision": 0.7947192041965132,
+    "min_recall": 0.37,
+    "max_recall": 0.97,
+    "std_recall": 0.15370426148939398
+  },
+  "final_plaintext_reference": {
+    "accuracy": 0.785,
+    "macro_recall": 0.7849999999999999,
+    "macro_precision": 0.7947192041965132,
+    "min_recall": 0.37,
+    "max_recall": 0.97,
+    "std_recall": 0.15370426148939398
+  },
+  "max_abs_weight_diff": 2.9690118907247515e-11,
+  "prediction_agreement": 1.0
+}

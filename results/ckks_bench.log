@@ -1,0 +1,33 @@
+M 10 {'evaluation_seconds': 4.09702730178833, 'per_request_seconds': 0.409702730178833, 'single_key_decrypt_seconds': 0.24148964881896973, 'max_abs_score_error': 5.86635184873785e-11}
+M 50 {'evaluation_seconds': 19.271230459213257, 'per_request_seconds': 0.38542460918426513, 'single_key_decrypt_seconds': 1.2282891273498535, 'max_abs_score_error': 1.113784620088154e-10}
+M 100 {'evaluation_seconds': 38.686418294906616, 'per_request_seconds': 0.38686418294906616, 'single_key_decrypt_seconds': 2.4280378818511963, 'max_abs_score_error': 9.471823325668538e-11}
+M 500 {'evaluation_seconds': 191.5503466129303, 'per_request_seconds': 0.3831006932258606, 'single_key_decrypt_seconds': 12.328024864196777, 'max_abs_score_error': 1.2190293219305204e-10}
+{'scale_bits': 50, 'first_modulus_bits': 60, 'mask_bits': 8, 'max_abs_error': 6.198375146482249e-12}
+{'scale_bits': 50, 'first_modulus_bits': 60, 'mask_bits': 16, 'max_abs_error': 1.9560630892812014e-11}
+{'scale_bits': 50, 'first_modulus_bits': 60, 'mask_bits': 24, 'max_abs_error': 2930344.2445961204}
+{'scale_bits': 50, 'first_modulus_bits': 60, 'mask_bits': 32, 'max_abs_error': 2918480611.59689}
+{'scale_bits': 50, 'first_modulus_bits': 60, 'mask_bits': 40, 'max_abs_error': 971794615972.6497}
+{'scale_bits': 50, 'first_modulus_bits': 60, 'mask_bits': 44, 'max_abs_error': 16507942565954.068}
+{'scale_bits': 40, 'first_modulus_bits': 60, 'mask_bits': 8, 'max_abs_error': 5.92098126084295e-09}
+{'scale_bits': 40, 'first_modulus_bits': 60, 'mask_bits': 16, 'max_abs_error': 9.18835518781691e-09}
+{'scale_bits': 40, 'first_modulus_bits': 60, 'mask_bits': 24, 'max_abs_error': 1.1301829416776599e-08}
+{'scale_bits': 40, 'first_modulus_bits': 60, 'mask_bits': 32, 'max_abs_error': 2.6526686269789934e-07}
+{'scale_bits': 40, 'first_modulus_bits': 60, 'mask_bits': 40, 'max_abs_error': 971831053169.1909}
+{'scale_bits': 40, 'first_modulus_bits': 60, 'mask_bits': 44, 'max_abs_error': 16507948146762.82}
+{'scale_bits': 30, 'first_modulus_bits': 60, 'mask_bits': 8, 'max_abs_error': 9.452761162265233e-06}
+{'scale_bits': 30, 'first_modulus_bits': 60, 'mask_bits': 16, 'max_abs_error': 1.238858385477215e-05}
+{'scale_bits': 30, 'first_modulus_bits': 60, 'mask_bits': 24, 'max_abs_error': 7.641574484296143e-06}
+{'scale_bits': 30, 'first_modulus_bits': 60, 'mask_bits': 32, 'max_abs_error': 1.4002308950822329e-05}
+{'scale_bits': 30, 'first_modulus_bits': 60, 'mask_bits': 40, 'max_abs_error': 0.0001848387860198808}
+{'scale_bits': 30, 'first_modulus_bits': 60, 'mask_bits': 44, 'max_abs_error': 16551381738402.262}
+{'scale_bits': 25, 'first_modulus_bits': 60, 'mask_bits': 8, 'max_abs_error': 0.0004608461170854672}
+{'scale_bits': 25, 'first_modulus_bits': 60, 'mask_bits': 16, 'max_abs_error': 0.0004075494594027451}
+{'scale_bits': 25, 'first_modulus_bits': 60, 'mask_bits': 24, 'max_abs_error': 0.0003404293922246726}
+{'scale_bits': 25, 'first_modulus_bits': 60, 'mask_bits': 32, 'max_abs_error': 0.00022285698424379108}
+{'scale_bits': 25, 'first_modulus_bits': 60, 'mask_bits': 40, 'max_abs_error': 0.0006206251899241177}
+{'scale_bits': 25, 'first_modulus_bits': 60, 'mask_bits': 44, 'max_abs_error': 0.004087622151480119}
+{'parties': 4, 'partial_decrypt_seconds': 0.01731268564860026, 'lead_seconds': 0.01883697509765625, 'fusion_seconds': 0.018385648727416992, 'share_bytes': 787720, 'decryption_error': 3.2094771285073875e-11}
+{'parties': 7, 'partial_decrypt_seconds': 0.016693711280822754, 'lead_seconds': 0.01851820945739746, 'fusion_seconds': 0.01893758773803711, 'share_bytes': 787720, 'decryption_error': 3.6896430355426446e-11}
+{'parties': 13, 'partial_decrypt_seconds': 0.016483227411905926, 'lead_seconds': 0.017132043838500977, 'fusion_seconds': 0.022415876388549805, 'share_bytes': 787720, 'decryption_error': 4.5330184050840217e-11}
+{'parties': 31, 'partial_decrypt_seconds': 0.014615782101949056, 'lead_seconds': 0.015735387802124023, 'fusion_seconds': 0.02280426025390625, 'share_bytes': 787720, 'decryption_error': 8.826461783684181e-11}
+{'outcome': 'decryption rejected by library', 'message': 'evelopment/src/pke/lib/encoding/ckkspackedencoding.cpp:l.462:Decode(): The decryption failed because the approximation error is too high. Check the parameters. '}

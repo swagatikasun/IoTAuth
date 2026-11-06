@@ -1,0 +1,35 @@
+[
+  {
+    "epsilon": 1.0,
+    "delta": 1e-05,
+    "sigma": 34.6589401027322,
+    "clip": 1.0,
+    "accuracy": [
+      0.639,
+      0.021886068628239306
+    ],
+    "bytes_per_client_update": 16880
+  },
+  {
+    "epsilon": 4.0,
+    "delta": 1e-05,
+    "sigma": 9.16468591310759,
+    "clip": 1.0,
+    "accuracy": [
+      0.8311999999999999,
+      0.012988456413292547
+    ],
+    "bytes_per_client_update": 16880
+  },
+  {
+    "epsilon": 8.0,
+    "delta": 1e-05,
+    "sigma": 4.881512683563966,
+    "clip": 1.0,
+    "accuracy": [
+      0.8474,
+      0.013831124321616097
+    ],
+    "bytes_per_client_update": 16880
+  }
+]

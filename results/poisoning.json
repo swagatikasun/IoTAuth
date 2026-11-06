@@ -1,0 +1,560 @@
+[
+  {
+    "scenario": "clean",
+    "rate": 0.0,
+    "defense": "none",
+    "accuracy": [
+      0.916,
+      0.008573214099741131
+    ],
+    "accuracy_drop_pp": 0.0,
+    "asr": [
+      0.007000000000000001,
+      0.0027386127875258306
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.1,
+    "defense": "none",
+    "accuracy": [
+      0.9102,
+      0.010917875251164956
+    ],
+    "accuracy_drop_pp": 0.5800000000000027,
+    "asr": [
+      0.025,
+      0.02
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.1,
+    "defense": "provenance",
+    "accuracy": [
+      0.9126000000000001,
+      0.008264381404557762
+    ],
+    "accuracy_drop_pp": 0.33999999999999586,
+    "asr": [
+      0.009000000000000001,
+      0.004183300132670377
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.1,
+    "defense": "norm",
+    "accuracy": [
+      0.9102,
+      0.010917875251164956
+    ],
+    "accuracy_drop_pp": 0.5800000000000027,
+    "asr": [
+      0.025,
+      0.02
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.1,
+    "defense": "gate",
+    "accuracy": [
+      0.9097999999999999,
+      0.01138859078200636
+    ],
+    "accuracy_drop_pp": 0.6200000000000094,
+    "asr": [
+      0.026000000000000002,
+      0.018506755523321747
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.1,
+    "defense": "all",
+    "accuracy": [
+      0.9128000000000001,
+      0.008258329128825037
+    ],
+    "accuracy_drop_pp": 0.31999999999999806,
+    "asr": [
+      0.009000000000000001,
+      0.004183300132670377
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.2,
+    "defense": "none",
+    "accuracy": [
+      0.9018,
+      0.011166915420114913
+    ],
+    "accuracy_drop_pp": 1.419999999999999,
+    "asr": [
+      0.056999999999999995,
+      0.014832396974191326
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.2,
+    "defense": "provenance",
+    "accuracy": [
+      0.908,
+      0.009772410142846041
+    ],
+    "accuracy_drop_pp": 0.8000000000000007,
+    "asr": [
+      0.01,
+      0.0035355339059327377
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.2,
+    "defense": "norm",
+    "accuracy": [
+      0.9018,
+      0.011166915420114913
+    ],
+    "accuracy_drop_pp": 1.419999999999999,
+    "asr": [
+      0.056999999999999995,
+      0.014832396974191326
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.2,
+    "defense": "gate",
+    "accuracy": [
+      0.9022,
+      0.010848963084092425
+    ],
+    "accuracy_drop_pp": 1.3800000000000034,
+    "asr": [
+      0.056999999999999995,
+      0.014832396974191326
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.2,
+    "defense": "all",
+    "accuracy": [
+      0.9084,
+      0.01033440854621106
+    ],
+    "accuracy_drop_pp": 0.7600000000000051,
+    "asr": [
+      0.009,
+      0.004183300132670377
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.4,
+    "defense": "none",
+    "accuracy": [
+      0.8492000000000001,
+      0.01398928161129085
+    ],
+    "accuracy_drop_pp": 6.679999999999997,
+    "asr": [
+      0.28300000000000003,
+      0.05563272418280449
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.4,
+    "defense": "provenance",
+    "accuracy": [
+      0.8703999999999998,
+      0.010212737145349437
+    ],
+    "accuracy_drop_pp": 4.56000000000002,
+    "asr": [
+      0.014000000000000002,
+      0.006519202405202648
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.4,
+    "defense": "norm",
+    "accuracy": [
+      0.8492000000000001,
+      0.01398928161129085
+    ],
+    "accuracy_drop_pp": 6.679999999999997,
+    "asr": [
+      0.28300000000000003,
+      0.05563272418280449
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.4,
+    "defense": "gate",
+    "accuracy": [
+      0.8497999999999999,
+      0.013663820841916814
+    ],
+    "accuracy_drop_pp": 6.620000000000015,
+    "asr": [
+      0.284,
+      0.054474764799859396
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "label_flip",
+    "rate": 0.4,
+    "defense": "all",
+    "accuracy": [
+      0.8695999999999999,
+      0.009423375191511806
+    ],
+    "accuracy_drop_pp": 4.640000000000011,
+    "asr": [
+      0.014000000000000002,
+      0.006519202405202648
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.1,
+    "defense": "none",
+    "accuracy": [
+      0.9158,
+      0.010756393447619896
+    ],
+    "accuracy_drop_pp": 0.0200000000000089,
+    "asr": [
+      0.984,
+      0.008944271909999166
+    ],
+    "victim_far": [
+      0.943,
+      0.02439262183530091
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.1,
+    "defense": "provenance",
+    "accuracy": [
+      0.9152000000000001,
+      0.010592450141492297
+    ],
+    "accuracy_drop_pp": 0.07999999999999119,
+    "asr": [
+      0.0,
+      0.0
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.1,
+    "defense": "norm",
+    "accuracy": [
+      0.9164,
+      0.01026157882589225
+    ],
+    "accuracy_drop_pp": -0.039999999999995595,
+    "asr": [
+      0.967,
+      0.021389249636207416
+    ],
+    "victim_far": [
+      0.834,
+      0.10039920318408907
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.1,
+    "defense": "gate",
+    "accuracy": [
+      0.9128000000000001,
+      0.011166915420114913
+    ],
+    "accuracy_drop_pp": 0.31999999999999806,
+    "asr": [
+      0.998,
+      0.004472135954999583
+    ],
+    "victim_far": [
+      0.9800000000000001,
+      0.03409545424246462
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.1,
+    "defense": "all",
+    "accuracy": [
+      0.9149999999999998,
+      0.010653637876331268
+    ],
+    "accuracy_drop_pp": 0.1000000000000223,
+    "asr": [
+      0.0,
+      0.0
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.2,
+    "defense": "none",
+    "accuracy": [
+      0.9132000000000001,
+      0.009418067742376891
+    ],
+    "accuracy_drop_pp": 0.27999999999999137,
+    "asr": [
+      0.998,
+      0.002738612787525833
+    ],
+    "victim_far": [
+      0.93,
+      0.022638462845343505
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.2,
+    "defense": "provenance",
+    "accuracy": [
+      0.9109999999999999,
+      0.008336666000266542
+    ],
+    "accuracy_drop_pp": 0.5000000000000115,
+    "asr": [
+      0.0,
+      0.0
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.2,
+    "defense": "norm",
+    "accuracy": [
+      0.9172,
+      0.011819475453673917
+    ],
+    "accuracy_drop_pp": -0.11999999999999789,
+    "asr": [
+      0.97,
+      0.019685019685029545
+    ],
+    "victim_far": [
+      0.8809999999999999,
+      0.09099450532861864
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.2,
+    "defense": "gate",
+    "accuracy": [
+      0.8586,
+      0.07237610102789459
+    ],
+    "accuracy_drop_pp": 5.74,
+    "asr": [
+      1.0,
+      0.0
+    ],
+    "victim_far": [
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.2,
+    "defense": "all",
+    "accuracy": [
+      0.9144,
+      0.009813256340277684
+    ],
+    "accuracy_drop_pp": 0.16000000000000458,
+    "asr": [
+      0.0,
+      0.0
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.4,
+    "defense": "none",
+    "accuracy": [
+      0.8896,
+      0.010784247771634338
+    ],
+    "accuracy_drop_pp": 2.640000000000009,
+    "asr": [
+      1.0,
+      0.0
+    ],
+    "victim_far": [
+      1.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.4,
+    "defense": "provenance",
+    "accuracy": [
+      0.8870000000000001,
+      0.010344080432788609
+    ],
+    "accuracy_drop_pp": 2.8999999999999915,
+    "asr": [
+      0.0,
+      0.0
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.4,
+    "defense": "norm",
+    "accuracy": [
+      0.9112000000000002,
+      0.012029131306956469
+    ],
+    "accuracy_drop_pp": 0.47999999999998044,
+    "asr": [
+      0.992,
+      0.007582875444051557
+    ],
+    "victim_far": [
+      0.932,
+      0.03402205167240797
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.4,
+    "defense": "gate",
+    "accuracy": [
+      0.7558,
+      0.061511787488253034
+    ],
+    "accuracy_drop_pp": 16.02,
+    "asr": [
+      0.8,
+      0.4472135954999579
+    ],
+    "victim_far": [
+      0.8,
+      0.4472135954999579
+    ]
+  },
+  {
+    "scenario": "backdoor",
+    "rate": 0.4,
+    "defense": "all",
+    "accuracy": [
+      0.9118,
+      0.010059821071967442
+    ],
+    "accuracy_drop_pp": 0.41999999999999815,
+    "asr": [
+      0.0,
+      0.0
+    ],
+    "victim_far": [
+      0.0,
+      0.0
+    ]
+  }
+]

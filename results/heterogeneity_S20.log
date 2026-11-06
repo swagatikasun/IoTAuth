@@ -1,0 +1,21 @@
+seed 0 done
+seed 1 done
+seed 2 done
+seed 3 done
+seed 4 done
+centralized - - {'accuracy': '91.84+-0.94', 'min_recall': '84.00+-3.46', 'std_recall': '4.52+-0.92'}
+IID 20 fedavg {'accuracy': '92.72+-0.78', 'min_recall': '86.00+-2.65', 'std_recall': '4.04+-0.98'}
+IID 20 fedprox {'accuracy': '92.74+-0.76', 'min_recall': '86.00+-2.65', 'std_recall': '4.05+-0.97'}
+IID 20 scaffold {'accuracy': '92.68+-0.72', 'min_recall': '85.60+-2.61', 'std_recall': '4.08+-0.89'}
+Dirichlet a=1.0 20 fedavg {'accuracy': '92.68+-0.72', 'min_recall': '85.60+-2.61', 'std_recall': '4.13+-0.97'}
+Dirichlet a=1.0 20 fedprox {'accuracy': '92.68+-0.72', 'min_recall': '85.60+-2.61', 'std_recall': '4.13+-0.97'}
+Dirichlet a=1.0 20 scaffold {'accuracy': '92.72+-0.74', 'min_recall': '86.20+-2.59', 'std_recall': '4.06+-0.82'}
+Dirichlet a=0.5 20 fedavg {'accuracy': '92.62+-0.77', 'min_recall': '85.40+-2.70', 'std_recall': '4.08+-0.88'}
+Dirichlet a=0.5 20 fedprox {'accuracy': '92.62+-0.77', 'min_recall': '85.40+-2.70', 'std_recall': '4.10+-0.91'}
+Dirichlet a=0.5 20 scaffold {'accuracy': '92.70+-0.67', 'min_recall': '85.40+-3.13', 'std_recall': '4.24+-1.00'}
+Dirichlet a=0.1 20 fedavg {'accuracy': '92.76+-0.63', 'min_recall': '85.40+-2.61', 'std_recall': '4.16+-0.87'}
+Dirichlet a=0.1 20 fedprox {'accuracy': '92.78+-0.61', 'min_recall': '85.40+-2.61', 'std_recall': '4.14+-0.85'}
+Dirichlet a=0.1 20 scaffold {'accuracy': '92.64+-0.84', 'min_recall': '84.60+-2.88', 'std_recall': '4.40+-0.86'}
+2 users/client 20 fedavg {'accuracy': '92.76+-0.67', 'min_recall': '85.60+-2.41', 'std_recall': '4.12+-0.89'}
+2 users/client 20 fedprox {'accuracy': '92.78+-0.69', 'min_recall': '85.60+-2.41', 'std_recall': '4.11+-0.91'}
+2 users/client 20 scaffold {'accuracy': '92.78+-0.67', 'min_recall': '85.60+-2.51', 'std_recall': '4.05+-0.91'}

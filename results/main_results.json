@@ -1,0 +1,253 @@
+{
+  "runs": [
+    {
+      "seed": 0,
+      "he_source": "ckks",
+      "centralized": {
+        "accuracy": 0.916,
+        "macro_recall": 0.916,
+        "macro_precision": 0.9160365030171616,
+        "min_recall": 0.83,
+        "max_recall": 1.0,
+        "std_recall": 0.05180733538795448
+      },
+      "fedavg": {
+        "accuracy": 0.916,
+        "macro_recall": 0.916,
+        "macro_precision": 0.9160365030171616,
+        "min_recall": 0.83,
+        "max_recall": 1.0,
+        "std_recall": 0.05180733538795448
+      },
+      "fedavg_he": {
+        "accuracy": 0.923,
+        "macro_recall": 0.923,
+        "macro_precision": 0.9239483023605619,
+        "min_recall": 0.84,
+        "max_recall": 1.0,
+        "std_recall": 0.04859012245302536
+      },
+      "he_logit_range": [
+        -4.278683878925679,
+        5.48094326192443
+      ],
+      "he_logit_p01_p99": [
+        -2.785938743999041,
+        2.32636866481547
+      ],
+      "ckks_vs_emulation_max_abs_diff": 3.68025818153761e-11
+    },
+    {
+      "seed": 1,
+      "he_source": "plaintext-emulation",
+      "centralized": {
+        "accuracy": 0.931,
+        "macro_recall": 0.931,
+        "macro_precision": 0.9312440473589652,
+        "min_recall": 0.89,
+        "max_recall": 0.99,
+        "std_recall": 0.03299999999999998
+      },
+      "fedavg": {
+        "accuracy": 0.931,
+        "macro_recall": 0.931,
+        "macro_precision": 0.9312440473589652,
+        "min_recall": 0.89,
+        "max_recall": 0.99,
+        "std_recall": 0.03299999999999998
+      },
+      "fedavg_he": {
+        "accuracy": 0.934,
+        "macro_recall": 0.9339999999999999,
+        "macro_precision": 0.9345206222342218,
+        "min_recall": 0.87,
+        "max_recall": 0.99,
+        "std_recall": 0.038781438859330615
+      },
+      "he_logit_range": [
+        -4.460796022769545,
+        4.933494171278901
+      ],
+      "he_logit_p01_p99": [
+        -2.7923883259846365,
+        2.3159959572942945
+      ]
+    },
+    {
+      "seed": 2,
+      "he_source": "plaintext-emulation",
+      "centralized": {
+        "accuracy": 0.911,
+        "macro_recall": 0.9109999999999999,
+        "macro_precision": 0.9117951577069483,
+        "min_recall": 0.81,
+        "max_recall": 0.98,
+        "std_recall": 0.040853396431630974
+      },
+      "fedavg": {
+        "accuracy": 0.911,
+        "macro_recall": 0.9109999999999999,
+        "macro_precision": 0.9117951577069483,
+        "min_recall": 0.81,
+        "max_recall": 0.98,
+        "std_recall": 0.040853396431630974
+      },
+      "fedavg_he": {
+        "accuracy": 0.908,
+        "macro_recall": 0.908,
+        "macro_precision": 0.9086309861498771,
+        "min_recall": 0.82,
+        "max_recall": 0.97,
+        "std_recall": 0.03762977544445356
+      },
+      "he_logit_range": [
+        -4.8845634068562145,
+        5.440838231843211
+      ],
+      "he_logit_p01_p99": [
+        -2.7844454397855873,
+        2.3756112393566218
+      ]
+    },
+    {
+      "seed": 3,
+      "he_source": "plaintext-emulation",
+      "centralized": {
+        "accuracy": 0.925,
+        "macro_recall": 0.925,
+        "macro_precision": 0.9255425441288662,
+        "min_recall": 0.86,
+        "max_recall": 1.0,
+        "std_recall": 0.04410215414239989
+      },
+      "fedavg": {
+        "accuracy": 0.925,
+        "macro_recall": 0.925,
+        "macro_precision": 0.9255425441288662,
+        "min_recall": 0.86,
+        "max_recall": 1.0,
+        "std_recall": 0.04410215414239989
+      },
+      "fedavg_he": {
+        "accuracy": 0.929,
+        "macro_recall": 0.9289999999999999,
+        "macro_precision": 0.9297031997329972,
+        "min_recall": 0.87,
+        "max_recall": 0.99,
+        "std_recall": 0.03590264614203247
+      },
+      "he_logit_range": [
+        -4.432589071913921,
+        5.045483685539677
+      ],
+      "he_logit_p01_p99": [
+        -2.798617751762776,
+        2.342928965475058
+      ]
+    },
+    {
+      "seed": 4,
+      "he_source": "plaintext-emulation",
+      "centralized": {
+        "accuracy": 0.909,
+        "macro_recall": 0.909,
+        "macro_precision": 0.909605643578633,
+        "min_recall": 0.81,
+        "max_recall": 0.99,
+        "std_recall": 0.05647123161398199
+      },
+      "fedavg": {
+        "accuracy": 0.909,
+        "macro_recall": 0.909,
+        "macro_precision": 0.909605643578633,
+        "min_recall": 0.81,
+        "max_recall": 0.99,
+        "std_recall": 0.05647123161398199
+      },
+      "fedavg_he": {
+        "accuracy": 0.903,
+        "macro_recall": 0.9029999999999999,
+        "macro_precision": 0.9041826473700771,
+        "min_recall": 0.76,
+        "max_recall": 1.0,
+        "std_recall": 0.06753517601961219
+      },
+      "he_logit_range": [
+        -4.2639167544977905,
+        5.240606615588165
+      ],
+      "he_logit_p01_p99": [
+        -2.8027612977157217,
+        2.346953206852752
+      ]
+    }
+  ],
+  "summary": {
+    "centralized": {
+      "accuracy": {
+        "mean": 0.9183999999999999,
+        "std": 0.00937016542009799
+      },
+      "macro_recall": {
+        "mean": 0.9183999999999999,
+        "std": 0.009370165420098012
+      },
+      "macro_precision": {
+        "mean": 0.9188447791581147,
+        "std": 0.009240496621728218
+      },
+      "min_recall": {
+        "mean": 0.8400000000000001,
+        "std": 0.034641016151377525
+      },
+      "std_recall": {
+        "mean": 0.045246823515193456,
+        "std": 0.009214456154932256
+      }
+    },
+    "fedavg": {
+      "accuracy": {
+        "mean": 0.9183999999999999,
+        "std": 0.00937016542009799
+      },
+      "macro_recall": {
+        "mean": 0.9183999999999999,
+        "std": 0.009370165420098012
+      },
+      "macro_precision": {
+        "mean": 0.9188447791581147,
+        "std": 0.009240496621728218
+      },
+      "min_recall": {
+        "mean": 0.8400000000000001,
+        "std": 0.034641016151377525
+      },
+      "std_recall": {
+        "mean": 0.045246823515193456,
+        "std": 0.009214456154932256
+      }
+    },
+    "fedavg_he": {
+      "accuracy": {
+        "mean": 0.9193999999999999,
+        "std": 0.01339029499301641
+      },
+      "macro_recall": {
+        "mean": 0.9193999999999999,
+        "std": 0.013390294993016394
+      },
+      "macro_precision": {
+        "mean": 0.9201971515695471,
+        "std": 0.013227229708961848
+      },
+      "min_recall": {
+        "mean": 0.8320000000000001,
+        "std": 0.045497252664309304
+      },
+      "std_recall": {
+        "mean": 0.04568783178369083,
+        "std": 0.013172984993214752
+      }
+    }
+  }
+}

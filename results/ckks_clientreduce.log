@@ -1,0 +1,23 @@
+{'round': 1, 'seconds': 198.59537291526794, 'accuracy': 0.859}
+{'round': 2, 'seconds': 193.26737070083618, 'accuracy': 0.859}
+{
+ "rounds_done": 2,
+ "final_encrypted": {
+  "accuracy": 0.859,
+  "macro_recall": 0.859,
+  "macro_precision": 0.8602869102890975,
+  "min_recall": 0.67,
+  "max_recall": 0.98,
+  "std_recall": 0.08893255871726617
+ },
+ "final_plaintext_reference": {
+  "accuracy": 0.859,
+  "macro_recall": 0.859,
+  "macro_precision": 0.8602869102890975,
+  "min_recall": 0.67,
+  "max_recall": 0.98,
+  "std_recall": 0.08893255871726617
+ },
+ "max_abs_weight_diff": 1.6781548373145938e-11,
+ "prediction_agreement": 1.0
+}

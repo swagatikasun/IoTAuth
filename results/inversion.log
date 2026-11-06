@@ -1,0 +1,11 @@
+seed 0 done
+seed 1 done
+seed 2 done
+seed 3 done
+seed 4 done
+1 exact analytic plain mse 1.04e-33 corr 1.000 | ct-only mse 0.505 corr 0.021
+1 linear analytic plain mse 5.37e-34 corr 1.000 | ct-only mse 0.331 corr 0.002
+8 exact optimisation plain mse 1.98 corr 0.319 | ct-only mse 0.773 corr 0.066
+8 linear optimisation plain mse 3.11 corr 0.340 | ct-only mse 0.798 corr 0.062
+32 exact optimisation plain mse 1.61 corr 0.227 | ct-only mse 0.97 corr 0.109
+32 linear optimisation plain mse 2.11 corr 0.190 | ct-only mse 1.13 corr 0.111

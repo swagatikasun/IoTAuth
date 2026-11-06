@@ -1,0 +1,24 @@
+{
+  "args": {
+    "ring": 32768,
+    "depth": 3,
+    "scale": 59,
+    "first": 60,
+    "precision": 80,
+    "mask_bits": 43,
+    "parties": 7,
+    "shrink": 36
+  },
+  "flooding_statistical_security_bits": 30,
+  "adversarial_queries": 1,
+  "noise_estimate_log2": -25.49535559917471,
+  "evaluation_log2_q": 323.0,
+  "ring": 32768,
+  "evaluation_seconds": 1.9674222469329834,
+  "single_key_score_error": 0.0008421465907058057,
+  "partial_decrypt_seconds": 0.007903099060058594,
+  "threshold_score_error": 0.0008421465907058057,
+  "threshold_log2_q": 323.0,
+  "mask": 6571079618475.689,
+  "true_score": -2.344592146590706
+}

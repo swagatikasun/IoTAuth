@@ -1,0 +1,315 @@
+{
+  "table": [
+    {
+      "variant": "exact sigmoid (plaintext)",
+      "accuracy": [
+        0.9183999999999999,
+        0.00937016542009799
+      ],
+      "extra_depth_for_activation": null,
+      "logit_range_p0.5_p99.5": [
+        -8.012153398995979,
+        8.969961945860389
+      ],
+      "diverged_at_round": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "variant": "linear 0.5+z/4",
+      "accuracy": [
+        0.9193999999999999,
+        0.01339029499301641
+      ],
+      "extra_depth_for_activation": 1,
+      "logit_range_p0.5_p99.5": [
+        -2.9855127864414968,
+        2.836316569586725
+      ],
+      "diverged_at_round": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max_abs_error_on_observed_range": 0.29446286157654317
+    },
+    {
+      "variant": "degree-3 least squares, a=4, clipped (plaintext only)",
+      "accuracy": [
+        0.9172,
+        0.008757853618324535
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        -9.471848847872844,
+        11.099114505964279
+      ],
+      "diverged_at_round": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max_abs_error_on_observed_range": 0.05615134461314264
+    },
+    {
+      "variant": "degree-3 least squares, a=4, unclipped (as in CKKS)",
+      "accuracy": [
+        0.1,
+        0.0
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        NaN,
+        NaN
+      ],
+      "diverged_at_round": [
+        13,
+        13,
+        15,
+        14,
+        13
+      ]
+    },
+    {
+      "variant": "degree-3 minimax, a=4, clipped (plaintext only)",
+      "accuracy": [
+        0.9182,
+        0.008671793355471528
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        -8.906590683654827,
+        10.40664348487207
+      ],
+      "diverged_at_round": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max_abs_error_on_observed_range": 0.04071645531703105
+    },
+    {
+      "variant": "degree-3 minimax, a=4, unclipped (as in CKKS)",
+      "accuracy": [
+        0.1,
+        0.0
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        NaN,
+        NaN
+      ],
+      "diverged_at_round": [
+        13,
+        14,
+        15,
+        14,
+        13
+      ]
+    },
+    {
+      "variant": "degree-3 least squares, a=8, clipped (plaintext only)",
+      "accuracy": [
+        0.915,
+        0.010271319292087078
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        -9.40303332476621,
+        10.750534417828918
+      ],
+      "diverged_at_round": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max_abs_error_on_observed_range": 0.11435470407958837
+    },
+    {
+      "variant": "degree-3 least squares, a=8, unclipped (as in CKKS)",
+      "accuracy": [
+        0.1,
+        0.0
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        NaN,
+        NaN
+      ],
+      "diverged_at_round": [
+        16,
+        16,
+        18,
+        17,
+        16
+      ]
+    },
+    {
+      "variant": "degree-3 minimax, a=8, clipped (plaintext only)",
+      "accuracy": [
+        0.9120000000000001,
+        0.011247221879202003
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        -10.518191547751124,
+        12.011011446325275
+      ],
+      "diverged_at_round": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max_abs_error_on_observed_range": 0.1609641587331042
+    },
+    {
+      "variant": "degree-3 minimax, a=8, unclipped (as in CKKS)",
+      "accuracy": [
+        0.1,
+        0.0
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        NaN,
+        NaN
+      ],
+      "diverged_at_round": [
+        17,
+        17,
+        20,
+        18,
+        17
+      ]
+    },
+    {
+      "variant": "degree-3 least squares, a=12, clipped (plaintext only)",
+      "accuracy": [
+        0.9108,
+        0.011584472366059674
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        -10.06839705316474,
+        12.537584563877576
+      ],
+      "diverged_at_round": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max_abs_error_on_observed_range": 0.16759503560638467
+    },
+    {
+      "variant": "degree-3 least squares, a=12, unclipped (as in CKKS)",
+      "accuracy": [
+        0.1,
+        0.0
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        NaN,
+        NaN
+      ],
+      "diverged_at_round": [
+        18,
+        19,
+        21,
+        20,
+        18
+      ]
+    },
+    {
+      "variant": "degree-3 minimax, a=12, clipped (plaintext only)",
+      "accuracy": [
+        0.9064,
+        0.01242175510948434
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        -12.871302951879116,
+        15.791562466615401
+      ],
+      "diverged_at_round": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "max_abs_error_on_observed_range": 0.23756243349560197
+    },
+    {
+      "variant": "degree-3 minimax, a=12, unclipped (as in CKKS)",
+      "accuracy": [
+        0.1,
+        0.0
+      ],
+      "extra_depth_for_activation": 2,
+      "logit_range_p0.5_p99.5": [
+        NaN,
+        NaN
+      ],
+      "diverged_at_round": [
+        20,
+        21,
+        24,
+        21,
+        20
+      ]
+    }
+  ],
+  "coefficients": {
+    "ls3_a4": [
+      0.5000000000000001,
+      0.2165918815531183,
+      0.0,
+      -0.0066020936923195505
+    ],
+    "minimax3_a4": [
+      0.49999999999999994,
+      0.2145363931488142,
+      -1.1064229482216351e-17,
+      -0.006232691530840139
+    ],
+    "ls3_a8": [
+      0.49999999999999983,
+      0.15009364278360895,
+      0.0,
+      -0.0015920415621867685
+    ],
+    "minimax3_a8": [
+      0.5000000000000001,
+      0.1130877789933028,
+      -8.673617379884035e-19,
+      -0.0007910890274939234
+    ],
+    "ls3_a12": [
+      0.5,
+      0.10883868053065078,
+      0.0,
+      -0.000552744330128804
+    ],
+    "minimax3_a12": [
+      0.5000000000000002,
+      0.07613631654299356,
+      -1.5419764230904951e-18,
+      -0.00023937612424220194
+    ]
+  }
+}

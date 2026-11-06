@@ -1,0 +1,262 @@
+Process 0 (that is, the initial process):
+{1}new skSC: skey;
+{2}new skC: sskey;
+{3}new skD: sskey;
+{4}out(c, pk(skSC));
+{5}out(c, spk(skC));
+{6}out(c, spk(skD));
+(
+    {7}!
+    {8}let skD_1: sskey = skD in
+    {9}let pkSC: pkey = pk(skSC) in
+    {10}let pkC: spkey = spk(skC) in
+    {11}new m: nonce;
+    {12}new r: coins;
+    {13}new n: nonce;
+    {14}new t: bitstring;
+    {15}let ct: bitstring = aenc((fd,m),pkSC,r) in
+    {16}event Sent(did,ct,t,n);
+    {17}out(c, (did,ct,t,n,sign((did,ct,t,n),skD_1)));
+    {18}in(c, (=ct,z: bitstring,cert: bitstring));
+    {19}if (checksign(cert,pkC) = (ct,z)) then
+    {20}let s: bitstring = unmask(z,m) in
+    {21}event Accepted(ct,z)
+) | (
+    {22}!
+    {23}let pkD: spkey = spk(skD) in
+    {24}in(c, (d: bitstring,ct_1: bitstring,t_1: bitstring,n_1: nonce,sg: bitstring));
+    {25}if (checksign(sg,pkD) = (d,ct_1,t_1,n_1)) then
+    {30}get used(=n_1) in
+        0
+    else
+        {26}insert used(n_1);
+        {27}event Logged(d,ct_1,t_1,n_1);
+        {28}out(logch, ct_1);
+        {29}out(c, ct_1)
+) | (
+    {31}!
+    {32}let skSC_1: skey = skSC in
+    {33}let skC_1: sskey = skC in
+    {34}in(logch, ct_2: bitstring);
+    {35}let z_1: bitstring = tdec(heval(ct_2),skSC_1) in
+    {36}event Posted(ct_2,z_1);
+    {37}out(c, (ct_2,z_1,sign((ct_2,z_1),skC_1)))
+)
+
+--  Process 1 (that is, process 0, with let moved downwards):
+{1}new skSC: skey;
+{2}new skC: sskey;
+{3}new skD: sskey;
+{4}out(c, pk(skSC));
+{5}out(c, spk(skC));
+{6}out(c, spk(skD));
+(
+    {7}!
+    {11}new m: nonce;
+    {12}new r: coins;
+    {13}new n: nonce;
+    {14}new t: bitstring;
+    {9}let pkSC: pkey = pk(skSC) in
+    {15}let ct: bitstring = aenc((fd,m),pkSC,r) in
+    {16}event Sent(did,ct,t,n);
+    {8}let skD_1: sskey = skD in
+    {17}out(c, (did,ct,t,n,sign((did,ct,t,n),skD_1)));
+    {18}in(c, (=ct,z: bitstring,cert: bitstring));
+    {10}let pkC: spkey = spk(skC) in
+    {19}if (checksign(cert,pkC) = (ct,z)) then
+    {20}let s: bitstring = unmask(z,m) in
+    {21}event Accepted(ct,z)
+) | (
+    {22}!
+    {24}in(c, (d: bitstring,ct_1: bitstring,t_1: bitstring,n_1: nonce,sg: bitstring));
+    {23}let pkD: spkey = spk(skD) in
+    {25}if (checksign(sg,pkD) = (d,ct_1,t_1,n_1)) then
+    {30}get used(=n_1) in
+        0
+    else
+        {26}insert used(n_1);
+        {27}event Logged(d,ct_1,t_1,n_1);
+        {28}out(logch, ct_1);
+        {29}out(c, ct_1)
+) | (
+    {31}!
+    {34}in(logch, ct_2: bitstring);
+    {32}let skSC_1: skey = skSC in
+    {35}let z_1: bitstring = tdec(heval(ct_2),skSC_1) in
+    {36}event Posted(ct_2,z_1);
+    {33}let skC_1: sskey = skC in
+    {37}out(c, (ct_2,z_1,sign((ct_2,z_1),skC_1)))
+)
+
+-- Query not attacker(fd[]) in process 1.
+Translating the process into Horn clauses...
+Completing...
+Starting query not attacker(fd[])
+RESULT not attacker(fd[]) is true.
+-- Query not attacker(score(fd[])) in process 1.
+Translating the process into Horn clauses...
+Completing...
+Starting query not attacker(score(fd[]))
+RESULT not attacker(score(fd[])) is true.
+-- Query event(Logged(d_1,x,t_2,n_2)) ==> event(Sent(d_1,x,t_2,n_2)) in process 1.
+Translating the process into Horn clauses...
+Completing...
+Starting query event(Logged(d_1,x,t_2,n_2)) ==> event(Sent(d_1,x,t_2,n_2))
+goal reachable: b-event(Sent(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2)) -> event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2))
+Abbreviations:
+m_1 = m[!1 = @sid]
+r_1 = r[!1 = @sid]
+t_2 = t[!1 = @sid]
+n_2 = n[!1 = @sid]
+RESULT event(Logged(d_1,x,t_2,n_2)) ==> event(Sent(d_1,x,t_2,n_2)) is true.
+-- Query inj-event(Logged(d_1,x,t_2,n_2)) ==> inj-event(Sent(d_1,x,t_2,n_2)) in process 1.
+Translating the process into Horn clauses...
+Completing...
+Starting query inj-event(Logged(d_1,x,t_2,n_2)) ==> inj-event(Sent(d_1,x,t_2,n_2))
+goal reachable: @sid ≠ @sid_1 && b-inj-event(Sent(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ16_1) -> inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_1) && inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_2)
+Abbreviations:
+m_1 = m[!1 = @sid_2]
+r_1 = r[!1 = @sid_2]
+t_2 = t[!1 = @sid_2]
+n_2 = n[!1 = @sid_2]
+@occ27_1 = @occ27[sg = sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[]),n_1 = n_2,t_1 = t_2,ct_1 = aenc((fd[],m_1),pk(skSC[]),r_1),d = did[],!1 = @sid]
+@occ27_2 = @occ27[sg = sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[]),n_1 = n_2,t_1 = t_2,ct_1 = aenc((fd[],m_1),pk(skSC[]),r_1),d = did[],!1 = @sid_1]
+@occ16_1 = @occ16[!1 = @sid_2]
+
+Derivation:
+Abbreviations:
+m_1 = m[!1 = @sid]
+r_1 = r[!1 = @sid]
+t_2 = t[!1 = @sid]
+n_2 = n[!1 = @sid]
+@occ27_1 = @occ27[sg = sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[]),n_1 = n_2,t_1 = t_2,ct_1 = aenc((fd[],m_1),pk(skSC[]),r_1),d = did[],!1 = @sid_1]
+@occ27_2 = @occ27[sg = sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[]),n_1 = n_2,t_1 = t_2,ct_1 = aenc((fd[],m_1),pk(skSC[]),r_1),d = did[],!1 = @sid_2]
+@occ16_1 = @occ16[!1 = @sid]
+
+1. The event Sent(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2) (with occurrence name @occ16_1) may be executed at {16}.
+So the message (did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2,sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[])) may be sent to the attacker at output {17}.
+attacker((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2,sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[]))).
+
+2. By 1, the attacker may know (did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2,sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[])).
+Using the function 5-proj-5-tuple the attacker may obtain sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[]).
+attacker(sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[])).
+
+3. By 1, the attacker may know (did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2,sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[])).
+Using the function 4-proj-5-tuple the attacker may obtain n_2.
+attacker(n_2).
+
+4. By 1, the attacker may know (did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2,sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[])).
+Using the function 3-proj-5-tuple the attacker may obtain t_2.
+attacker(t_2).
+
+5. By 1, the attacker may know (did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2,sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[])).
+Using the function 2-proj-5-tuple the attacker may obtain aenc((fd[],m_1),pk(skSC[]),r_1).
+attacker(aenc((fd[],m_1),pk(skSC[]),r_1)).
+
+6. The attacker initially knows did[].
+attacker(did[]).
+
+7. By 6, the attacker may know did[].
+By 5, the attacker may know aenc((fd[],m_1),pk(skSC[]),r_1).
+By 4, the attacker may know t_2.
+By 3, the attacker may know n_2.
+By 2, the attacker may know sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[]).
+Using the function 5-tuple the attacker may obtain (did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2,sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[])).
+attacker((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2,sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[]))).
+
+8. The message (did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2,sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[])) that the attacker may have by 7 may be received at input {24}.
+So event Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2) may be executed at {27} in session @sid_2.
+inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_2).
+
+9. By 8, inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_2).
+The goal is reached, represented in the following fact:
+inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_2).
+
+10. The message (did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2,sign((did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),skD[])) that the attacker may have by 7 may be received at input {24}.
+So event Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2) may be executed at {27} in session @sid_1.
+inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_1).
+
+11. By 10, inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_1).
+The goal is reached, represented in the following fact:
+inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_1).
+
+12. By 11, inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_1).
+By 9, inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_2).
+We have @occ27_1 ≠ @occ27_2.
+The goals for injectivity are reached, combined in the following fact:
+inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_1) && inj-event(Logged(did[],aenc((fd[],m_1),pk(skSC[]),r_1),t_2,n_2),@occ27_2).
+
+
+A more detailed output of the traces is available with
+  set traceDisplay = long.
+
+new skSC: skey creating skSC_2 at {1}
+
+new skC: sskey creating skC_2 at {2}
+
+new skD: sskey creating skD_2 at {3}
+
+out(c, ~M) with ~M = pk(skSC_2) at {4}
+
+out(c, ~M_1) with ~M_1 = spk(skC_2) at {5}
+
+out(c, ~M_2) with ~M_2 = spk(skD_2) at {6}
+
+new m: nonce creating m_2 at {11} in copy a
+
+new r: coins creating r_2 at {12} in copy a
+
+new n: nonce creating n_3 at {13} in copy a
+
+new t: bitstring creating t_3 at {14} in copy a
+
+event Sent(did,aenc((fd,m_2),pk(skSC_2),r_2),t_3,n_3) at {16} in copy a
+
+out(c, (~M_3,~M_4,~M_5,~M_6,~M_7)) with ~M_3 = did, ~M_4 = aenc((fd,m_2),pk(skSC_2),r_2), ~M_5 = t_3, ~M_6 = n_3, ~M_7 = sign((did,aenc((fd,m_2),pk(skSC_2),r_2),t_3,n_3),skD_2) at {17} in copy a
+
+in(c, (did,~M_4,~M_5,~M_6,~M_7)) with ~M_4 = aenc((fd,m_2),pk(skSC_2),r_2), ~M_5 = t_3, ~M_6 = n_3, ~M_7 = sign((did,aenc((fd,m_2),pk(skSC_2),r_2),t_3,n_3),skD_2) at {24} in copy a_1
+
+get used(=n_3): else branch taken at {30} in copy a_1
+
+in(c, (did,~M_4,~M_5,~M_6,~M_7)) with ~M_4 = aenc((fd,m_2),pk(skSC_2),r_2), ~M_5 = t_3, ~M_6 = n_3, ~M_7 = sign((did,aenc((fd,m_2),pk(skSC_2),r_2),t_3,n_3),skD_2) at {24} in copy a_2
+
+get used(=n_3): else branch taken at {30} in copy a_2
+
+insert used(n_3) at {26} in copy a_2
+
+event Logged(did,aenc((fd,m_2),pk(skSC_2),r_2),t_3,n_3) at {27} in copy a_2 (goal)
+
+insert used(n_3) at {26} in copy a_1
+
+event Logged(did,aenc((fd,m_2),pk(skSC_2),r_2),t_3,n_3) at {27} in copy a_1 (goal)
+
+The event Logged(did,aenc((fd,m_2),pk(skSC_2),r_2),t_3,n_3) is executed at {27} in copy a_1.
+The event Logged(did,aenc((fd,m_2),pk(skSC_2),r_2),t_3,n_3) is executed at {27} in copy a_2.
+A trace has been found.
+RESULT inj-event(Logged(d_1,x,t_2,n_2)) ==> inj-event(Sent(d_1,x,t_2,n_2)) is false.
+RESULT (but event(Logged(d_1,x,t_2,n_2)) ==> event(Sent(d_1,x,t_2,n_2)) is true.)
+-- Query event(Accepted(x,z_2)) ==> event(Posted(x,z_2)) in process 1.
+Translating the process into Horn clauses...
+Completing...
+Starting query event(Accepted(x,z_2)) ==> event(Posted(x,z_2))
+goal reachable: b-event(Posted(aenc((fd[],m_1),pk(skSC[]),r_1),mask(score(fd[]),m_1))) -> event(Accepted(aenc((fd[],m_1),pk(skSC[]),r_1),mask(score(fd[]),m_1)))
+Abbreviations:
+m_1 = m[!1 = @sid]
+r_1 = r[!1 = @sid]
+RESULT event(Accepted(x,z_2)) ==> event(Posted(x,z_2)) is true.
+
+--------------------------------------------------------------
+Verification summary:
+
+Query not attacker(fd[]) is true.
+
+Query not attacker(score(fd[])) is true.
+
+Query event(Logged(d_1,x,t_2,n_2)) ==> event(Sent(d_1,x,t_2,n_2)) is true.
+
+Query inj-event(Logged(d_1,x,t_2,n_2)) ==> inj-event(Sent(d_1,x,t_2,n_2)) is false.
+
+Query event(Accepted(x,z_2)) ==> event(Posted(x,z_2)) is true.
+
+--------------------------------------------------------------
+

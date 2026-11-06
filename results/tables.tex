@@ -1,0 +1,157 @@
+% Main results (5 splits)
+Centralized & 91.84 $\pm$ 0.94 & 91.84 $\pm$ 0.94 & 91.88 $\pm$ 0.92 & 84.00 $\pm$ 3.46 \\
+FL (FedAvg) & 91.84 $\pm$ 0.94 & 91.84 $\pm$ 0.94 & 91.88 $\pm$ 0.92 & 84.00 $\pm$ 3.46 \\
+FL (FedAvg) + HE & 91.94 $\pm$ 1.34 & 91.94 $\pm$ 1.34 & 92.02 $\pm$ 1.32 & 83.20 $\pm$ 4.55 \\
+% Verification (strict)
+Centralized & 10.53 $\pm$ 0.51 & 10.12 $\pm$ 0.68 & 4.55 $\pm$ 0.48 & 11.23 $\pm$ 0.57 & 90.02 $\pm$ 4.44 & 99.30 $\pm$ 0.74 \\
+FedAvg & 10.53 $\pm$ 0.51 & 10.12 $\pm$ 0.68 & 4.55 $\pm$ 0.48 & 11.23 $\pm$ 0.57 & 90.02 $\pm$ 4.44 & 99.30 $\pm$ 0.74 \\
+FedAvg + CKKS (linear sigmoid) & 11.21 $\pm$ 0.68 & 10.50 $\pm$ 0.68 & 4.43 $\pm$ 0.51 & 11.80 $\pm$ 0.73 & 94.98 $\pm$ 3.76 & 100.00 $\pm$ 0.00 \\
+% risk levels FedAvg+HE: genuine / impostor
+low & 0.0 $\pm$ 0.0 & 0.1 $\pm$ 0.0 \\
+medium & 1.1 $\pm$ 0.5 & 0.6 $\pm$ 0.2 \\
+high & 82.5 $\pm$ 1.9 & 8.3 $\pm$ 1.4 \\
+critical & 16.4 $\pm$ 1.9 & 91.1 $\pm$ 1.5 \\
+% thresholds (FedAvg+HE): theta1=22.158+-5.269, theta2=4.127+-0.441, theta3=-0.045+-0.077
+% theta1: far_known 0.00 $\pm$ 0.00, far_unseen 0.06 $\pm$ 0.04, frr 100.00 $\pm$ 0.00
+% theta2: far_known 0.02 $\pm$ 0.01, far_unseen 0.68 $\pm$ 0.26, frr 98.86 $\pm$ 0.46
+% theta3: far_known 0.99 $\pm$ 0.15, far_unseen 9.78 $\pm$ 1.60, frr 16.40 $\pm$ 1.87
+% Verification (relaxed)
+Centralized & 10.53 $\pm$ 0.51 & 10.12 $\pm$ 0.68 & 4.55 $\pm$ 0.48 & 11.23 $\pm$ 0.57 & 90.02 $\pm$ 4.44 & 99.30 $\pm$ 0.74 \\
+FedAvg & 10.53 $\pm$ 0.51 & 10.12 $\pm$ 0.68 & 4.55 $\pm$ 0.48 & 11.23 $\pm$ 0.57 & 90.02 $\pm$ 4.44 & 99.30 $\pm$ 0.74 \\
+FedAvg + CKKS (linear sigmoid) & 11.21 $\pm$ 0.68 & 10.50 $\pm$ 0.68 & 4.43 $\pm$ 0.51 & 11.80 $\pm$ 0.73 & 94.98 $\pm$ 3.76 & 100.00 $\pm$ 0.00 \\
+% risk levels FedAvg+HE: genuine / impostor
+low & 1.1 $\pm$ 0.5 & 0.6 $\pm$ 0.2 \\
+medium & 53.4 $\pm$ 7.4 & 3.8 $\pm$ 1.1 \\
+high & 40.7 $\pm$ 7.5 & 13.7 $\pm$ 0.4 \\
+critical & 4.8 $\pm$ 0.9 & 81.9 $\pm$ 1.3 \\
+% thresholds (FedAvg+HE): theta1=4.127+-0.441, theta2=0.833+-0.182, theta3=-0.755+-0.022
+% theta1: far_known 0.02 $\pm$ 0.01, far_unseen 0.68 $\pm$ 0.26, frr 98.86 $\pm$ 0.46
+% theta2: far_known 0.25 $\pm$ 0.10, far_unseen 4.82 $\pm$ 1.32, frr 45.48 $\pm$ 7.49
+% theta3: far_known 4.05 $\pm$ 0.25, far_unseen 19.62 $\pm$ 1.46, frr 4.76 $\pm$ 0.88
+% heterogeneity_S1-5.json
+centralized & - & - & 91.84 $\pm$ 0.94 & 84.00 $\pm$ 3.46 & 4.52 $\pm$ 0.92 \\
+IID & 1 & fedavg & 91.84 $\pm$ 0.94 & 84.00 $\pm$ 3.46 & 4.52 $\pm$ 0.92 \\
+IID & 5 & fedavg & 92.96 $\pm$ 0.69 & 85.80 $\pm$ 1.92 & 4.26 $\pm$ 0.67 \\
+IID & 5 & fedprox & 92.96 $\pm$ 0.69 & 85.80 $\pm$ 1.92 & 4.26 $\pm$ 0.67 \\
+IID & 5 & scaffold & 92.98 $\pm$ 0.65 & 86.00 $\pm$ 1.58 & 4.21 $\pm$ 0.64 \\
+Dirichlet a=1.0 & 1 & fedavg & 91.84 $\pm$ 0.94 & 84.00 $\pm$ 3.46 & 4.52 $\pm$ 0.92 \\
+Dirichlet a=1.0 & 5 & fedavg & 93.00 $\pm$ 0.72 & 86.00 $\pm$ 2.24 & 4.21 $\pm$ 0.73 \\
+Dirichlet a=1.0 & 5 & fedprox & 93.00 $\pm$ 0.72 & 86.00 $\pm$ 2.24 & 4.21 $\pm$ 0.73 \\
+Dirichlet a=1.0 & 5 & scaffold & 92.82 $\pm$ 0.61 & 86.00 $\pm$ 2.24 & 4.28 $\pm$ 0.58 \\
+Dirichlet a=0.5 & 1 & fedavg & 91.84 $\pm$ 0.94 & 84.00 $\pm$ 3.46 & 4.52 $\pm$ 0.92 \\
+Dirichlet a=0.5 & 5 & fedavg & 92.94 $\pm$ 0.72 & 85.80 $\pm$ 1.92 & 4.27 $\pm$ 0.68 \\
+Dirichlet a=0.5 & 5 & fedprox & 92.98 $\pm$ 0.72 & 86.00 $\pm$ 2.24 & 4.23 $\pm$ 0.71 \\
+Dirichlet a=0.5 & 5 & scaffold & 92.62 $\pm$ 0.54 & 85.00 $\pm$ 3.08 & 4.47 $\pm$ 0.74 \\
+Dirichlet a=0.1 & 1 & fedavg & 91.84 $\pm$ 0.94 & 84.00 $\pm$ 3.46 & 4.52 $\pm$ 0.92 \\
+Dirichlet a=0.1 & 5 & fedavg & 92.92 $\pm$ 0.65 & 85.60 $\pm$ 1.95 & 4.27 $\pm$ 0.68 \\
+Dirichlet a=0.1 & 5 & fedprox & 92.92 $\pm$ 0.65 & 85.60 $\pm$ 1.95 & 4.27 $\pm$ 0.68 \\
+Dirichlet a=0.1 & 5 & scaffold & 92.52 $\pm$ 0.54 & 84.60 $\pm$ 0.89 & 4.48 $\pm$ 0.87 \\
+2 users/client & 1 & fedavg & 91.84 $\pm$ 0.94 & 84.00 $\pm$ 3.46 & 4.52 $\pm$ 0.92 \\
+2 users/client & 5 & fedavg & 92.96 $\pm$ 0.72 & 85.80 $\pm$ 2.28 & 4.26 $\pm$ 0.76 \\
+2 users/client & 5 & fedprox & 92.96 $\pm$ 0.72 & 85.80 $\pm$ 2.28 & 4.26 $\pm$ 0.76 \\
+2 users/client & 5 & scaffold & 92.98 $\pm$ 0.67 & 85.80 $\pm$ 1.64 & 4.24 $\pm$ 0.68 \\
+% heterogeneity_S20.json
+centralized & - & - & 91.84 $\pm$ 0.94 & 84.00 $\pm$ 3.46 & 4.52 $\pm$ 0.92 \\
+IID & 20 & fedavg & 92.72 $\pm$ 0.78 & 86.00 $\pm$ 2.65 & 4.04 $\pm$ 0.98 \\
+IID & 20 & fedprox & 92.74 $\pm$ 0.76 & 86.00 $\pm$ 2.65 & 4.05 $\pm$ 0.97 \\
+IID & 20 & scaffold & 92.68 $\pm$ 0.72 & 85.60 $\pm$ 2.61 & 4.08 $\pm$ 0.89 \\
+Dirichlet a=1.0 & 20 & fedavg & 92.68 $\pm$ 0.72 & 85.60 $\pm$ 2.61 & 4.13 $\pm$ 0.97 \\
+Dirichlet a=1.0 & 20 & fedprox & 92.68 $\pm$ 0.72 & 85.60 $\pm$ 2.61 & 4.13 $\pm$ 0.97 \\
+Dirichlet a=1.0 & 20 & scaffold & 92.72 $\pm$ 0.74 & 86.20 $\pm$ 2.59 & 4.06 $\pm$ 0.82 \\
+Dirichlet a=0.5 & 20 & fedavg & 92.62 $\pm$ 0.77 & 85.40 $\pm$ 2.70 & 4.08 $\pm$ 0.88 \\
+Dirichlet a=0.5 & 20 & fedprox & 92.62 $\pm$ 0.77 & 85.40 $\pm$ 2.70 & 4.10 $\pm$ 0.91 \\
+Dirichlet a=0.5 & 20 & scaffold & 92.70 $\pm$ 0.67 & 85.40 $\pm$ 3.13 & 4.24 $\pm$ 1.00 \\
+Dirichlet a=0.1 & 20 & fedavg & 92.76 $\pm$ 0.63 & 85.40 $\pm$ 2.61 & 4.16 $\pm$ 0.87 \\
+Dirichlet a=0.1 & 20 & fedprox & 92.78 $\pm$ 0.61 & 85.40 $\pm$ 2.61 & 4.14 $\pm$ 0.85 \\
+Dirichlet a=0.1 & 20 & scaffold & 92.64 $\pm$ 0.84 & 84.60 $\pm$ 2.88 & 4.40 $\pm$ 0.86 \\
+2 users/client & 20 & fedavg & 92.76 $\pm$ 0.67 & 85.60 $\pm$ 2.41 & 4.12 $\pm$ 0.89 \\
+2 users/client & 20 & fedprox & 92.78 $\pm$ 0.69 & 85.60 $\pm$ 2.41 & 4.11 $\pm$ 0.91 \\
+2 users/client & 20 & scaffold & 92.78 $\pm$ 0.67 & 85.60 $\pm$ 2.51 & 4.05 $\pm$ 0.91 \\
+% sigmoid ablation
+exact sigmoid (plaintext) & 91.84 $\pm$ 0.94 & None & [None, None, None, None, None] & [-8.012153398995979, 8.969961945860389] \\
+linear 0.5+z/4 & 91.94 $\pm$ 1.34 & 1 & [None, None, None, None, None] & [-2.9855127864414968, 2.836316569586725] \\
+degree-3 least squares, a=4, clipped (plaintext only) & 91.72 $\pm$ 0.88 & 2 & [None, None, None, None, None] & [-9.471848847872844, 11.099114505964279] \\
+degree-3 least squares, a=4, unclipped (as in CKKS) & 10.00 $\pm$ 0.00 & 2 & [13, 13, 15, 14, 13] & [nan, nan] \\
+degree-3 minimax, a=4, clipped (plaintext only) & 91.82 $\pm$ 0.87 & 2 & [None, None, None, None, None] & [-8.906590683654827, 10.40664348487207] \\
+degree-3 minimax, a=4, unclipped (as in CKKS) & 10.00 $\pm$ 0.00 & 2 & [13, 14, 15, 14, 13] & [nan, nan] \\
+degree-3 least squares, a=8, clipped (plaintext only) & 91.50 $\pm$ 1.03 & 2 & [None, None, None, None, None] & [-9.40303332476621, 10.750534417828918] \\
+degree-3 least squares, a=8, unclipped (as in CKKS) & 10.00 $\pm$ 0.00 & 2 & [16, 16, 18, 17, 16] & [nan, nan] \\
+degree-3 minimax, a=8, clipped (plaintext only) & 91.20 $\pm$ 1.12 & 2 & [None, None, None, None, None] & [-10.518191547751124, 12.011011446325275] \\
+degree-3 minimax, a=8, unclipped (as in CKKS) & 10.00 $\pm$ 0.00 & 2 & [17, 17, 20, 18, 17] & [nan, nan] \\
+degree-3 least squares, a=12, clipped (plaintext only) & 91.08 $\pm$ 1.16 & 2 & [None, None, None, None, None] & [-10.06839705316474, 12.537584563877576] \\
+degree-3 least squares, a=12, unclipped (as in CKKS) & 10.00 $\pm$ 0.00 & 2 & [18, 19, 21, 20, 18] & [nan, nan] \\
+degree-3 minimax, a=12, clipped (plaintext only) & 90.64 $\pm$ 1.24 & 2 & [None, None, None, None, None] & [-12.871302951879116, 15.791562466615401] \\
+degree-3 minimax, a=12, unclipped (as in CKKS) & 10.00 $\pm$ 0.00 & 2 & [20, 21, 24, 21, 20] & [nan, nan] \\
+% scaling users R=50
+10 & 4000 & 91.84 $\pm$ 0.94 & 91.84 $\pm$ 0.94 & 91.94 $\pm$ 1.34 \\
+20 & 8000 & 86.84 $\pm$ 0.83 & 86.84 $\pm$ 0.83 & 86.63 $\pm$ 0.86 \\
+30 & 12000 & 82.14 $\pm$ 0.73 & 82.14 $\pm$ 0.73 & 81.84 $\pm$ 0.70 \\
+51 & 20400 & 72.13 $\pm$ 0.43 & 72.13 $\pm$ 0.43 & 71.69 $\pm$ 0.30 \\
+% scaling users R=200
+10 & 4000 & 92.86 $\pm$ 0.66 & 92.86 $\pm$ 0.66 & 91.80 $\pm$ 1.13 \\
+20 & 8000 & 89.38 $\pm$ 0.53 & 89.38 $\pm$ 0.53 & 87.00 $\pm$ 1.03 \\
+30 & 12000 & 86.07 $\pm$ 0.42 & 86.07 $\pm$ 0.42 & 82.13 $\pm$ 0.65 \\
+51 & 20400 & 80.17 $\pm$ 0.59 & 80.17 $\pm$ 0.59 & 73.85 $\pm$ 0.39 \\
+% poisoning
+clean & 0.0 & none & 91.60 $\pm$ 0.86 & 0.00 & 0.7 $\pm$ 0.3 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.1 & none & 91.02 $\pm$ 1.09 & 0.58 & 2.5 $\pm$ 2.0 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.1 & provenance & 91.26 $\pm$ 0.83 & 0.34 & 0.9 $\pm$ 0.4 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.1 & norm & 91.02 $\pm$ 1.09 & 0.58 & 2.5 $\pm$ 2.0 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.1 & gate & 90.98 $\pm$ 1.14 & 0.62 & 2.6 $\pm$ 1.9 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.1 & all & 91.28 $\pm$ 0.83 & 0.32 & 0.9 $\pm$ 0.4 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.2 & none & 90.18 $\pm$ 1.12 & 1.42 & 5.7 $\pm$ 1.5 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.2 & provenance & 90.80 $\pm$ 0.98 & 0.80 & 1.0 $\pm$ 0.4 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.2 & norm & 90.18 $\pm$ 1.12 & 1.42 & 5.7 $\pm$ 1.5 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.2 & gate & 90.22 $\pm$ 1.08 & 1.38 & 5.7 $\pm$ 1.5 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.2 & all & 90.84 $\pm$ 1.03 & 0.76 & 0.9 $\pm$ 0.4 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.4 & none & 84.92 $\pm$ 1.40 & 6.68 & 28.3 $\pm$ 5.6 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.4 & provenance & 87.04 $\pm$ 1.02 & 4.56 & 1.4 $\pm$ 0.7 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.4 & norm & 84.92 $\pm$ 1.40 & 6.68 & 28.3 $\pm$ 5.6 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.4 & gate & 84.98 $\pm$ 1.37 & 6.62 & 28.4 $\pm$ 5.4 & 0.0 $\pm$ 0.0 \\
+label_flip & 0.4 & all & 86.96 $\pm$ 0.94 & 4.64 & 1.4 $\pm$ 0.7 & 0.0 $\pm$ 0.0 \\
+backdoor & 0.1 & none & 91.58 $\pm$ 1.08 & 0.02 & 98.4 $\pm$ 0.9 & 94.3 $\pm$ 2.4 \\
+backdoor & 0.1 & provenance & 91.52 $\pm$ 1.06 & 0.08 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 \\
+backdoor & 0.1 & norm & 91.64 $\pm$ 1.03 & -0.04 & 96.7 $\pm$ 2.1 & 83.4 $\pm$ 10.0 \\
+backdoor & 0.1 & gate & 91.28 $\pm$ 1.12 & 0.32 & 99.8 $\pm$ 0.4 & 98.0 $\pm$ 3.4 \\
+backdoor & 0.1 & all & 91.50 $\pm$ 1.07 & 0.10 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 \\
+backdoor & 0.2 & none & 91.32 $\pm$ 0.94 & 0.28 & 99.8 $\pm$ 0.3 & 93.0 $\pm$ 2.3 \\
+backdoor & 0.2 & provenance & 91.10 $\pm$ 0.83 & 0.50 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 \\
+backdoor & 0.2 & norm & 91.72 $\pm$ 1.18 & -0.12 & 97.0 $\pm$ 2.0 & 88.1 $\pm$ 9.1 \\
+backdoor & 0.2 & gate & 85.86 $\pm$ 7.24 & 5.74 & 100.0 $\pm$ 0.0 & 100.0 $\pm$ 0.0 \\
+backdoor & 0.2 & all & 91.44 $\pm$ 0.98 & 0.16 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 \\
+backdoor & 0.4 & none & 88.96 $\pm$ 1.08 & 2.64 & 100.0 $\pm$ 0.0 & 100.0 $\pm$ 0.0 \\
+backdoor & 0.4 & provenance & 88.70 $\pm$ 1.03 & 2.90 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 \\
+backdoor & 0.4 & norm & 91.12 $\pm$ 1.20 & 0.48 & 99.2 $\pm$ 0.8 & 93.2 $\pm$ 3.4 \\
+backdoor & 0.4 & gate & 75.58 $\pm$ 6.15 & 16.02 & 80.0 $\pm$ 44.7 & 80.0 $\pm$ 44.7 \\
+backdoor & 0.4 & all & 91.18 $\pm$ 1.01 & 0.42 & 0.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 \\
+% inversion
+1 & exact & analytic & 1.04e-33 & 1.000 & 0.505 & 0.021 \\
+1 & linear & analytic & 5.37e-34 & 1.000 & 0.331 & 0.002 \\
+8 & exact & optimisation & 1.98 & 0.319 & 0.773 & 0.066 \\
+8 & linear & optimisation & 3.11 & 0.340 & 0.798 & 0.062 \\
+32 & exact & optimisation & 1.61 & 0.227 & 0.97 & 0.109 \\
+32 & linear & optimisation & 2.11 & 0.190 & 1.13 & 0.111 \\
+% DP-FedAvg clip 1
+eps=1.0 sigma=34.66 & 63.90 $\pm$ 2.19 \\
+eps=4.0 sigma=9.16 & 83.12 $\pm$ 1.30 \\
+eps=8.0 sigma=4.88 & 84.74 $\pm$ 1.38 \\
+% DP-FedAvg clip 5
+eps=1.0 sigma=34.66 & 57.44 $\pm$ 1.75 \\
+eps=4.0 sigma=9.16 & 85.10 $\pm$ 1.51 \\
+eps=8.0 sigma=4.88 & 88.16 $\pm$ 1.21 \\
+% mlp.json
+% {"hidden": 32, "rounds": 200, "lr": 0.05, "beta": 0.9, "plaintext_federated_accuracy": [0.9119999999999999, 0.007582875444051557], "encrypted_inference": {"seed": 0, "test_samples": 1000, "encrypted_accuracy": 0.91, "plaintext_accuracy": 0.91, "max_abs_logit_error": 1.271985183848301e-09, "prediction_agreement": 1.0, "encryption_seconds": 0.44466423988342285, "inference_seconds": 16.21611499786377, "multiplicative_depth_used": 3}}
+% incentive.json
+% {"assumptions": {"reward_per_epoch": 1.0, "value_per_reputation_point": 0.5, "reputation_penalty": 20.0, "ban_epochs": 100, "detection_probability": 1.0}, "table": [{"K": 4, "f": 1, "G_max": 1000.0, "min_stake_penalty": 390.0, "per_validator_loss_at_min": 500.0}, {"K": 4, "f": 1, "G_max": 10000.0, "min_stake_penalty": 4890.0, "per_validator_loss_at_min": 5000.0}, {"K": 4, "f": 1, "G_max": 100000.0, "min_stake_penalty": 49890.0, "per_validator_loss_at_min": 50000.0}, {"K": 7, "f": 2, "G_max": 1000.0, "min_stake_penalty": 223.33333333333331, "per_validator_loss_at_min": 333.3333333333333}, {"K": 7, "f": 2, "G_max": 10000.0, "min_stake_penalty": 3223.3333333333335, "per_validator_loss_at_min": 3333.3333333333335}, {"K": 7, "f": 2, "G_max": 100000.0, "min_stake_penalty": 33223.333333333336, "per_validator_loss_at_min": 33333.333333333336}, {"K": 13, "f": 4, "G_max": 1000.0, "min_stake_penalty": 90.0, "per_validator_loss_at_min": 200.0}, {"K": 13, "f": 4, "G_max": 10000.0, "min_stake_penalty": 1890.0, "per_validator_loss_at_min": 2000.0}, {"K": 13, "f": 4, "G_max": 100000.0, "min_stake_penalty": 19890.0, "per_validator_loss_at_min": 20000.0}, {"K": 31, "f": 10, "G_max": 1000.0, "min_stake_penalty": 0.0, "per_validator_loss_at_min": 110.0}, {"K": 31, "f": 10, "G_max": 10000.0, "min_stake_penalty": 799.0909090909091, "per_validator_loss_at_min": 909.0909090909091}, {"K": 31, "f": 10, "G_max": 100000.0, "min_stake_penalty": 8980.90909090909, "per_validator_loss_at_min": 9090.90909090909}, {"K": 61, "f": 20, "G_max": 1000.0, "min_stake_penalty": 0.0, "per_validator_loss_at_min": 110.0}, {"K": 61, "f": 20, "G_max": 10000.0, "min_stake_penalty": 366.1904761904762, "per_validator_loss_at_min": 476.1904761904762}, {"K": 61, "f": 20, "G_max": 100000.0, "min_stake_penalty": 4651.9047619047615, "per_validator_loss_at_min": 4761.9047619047615}, {"K": 103, "f": 34, "G_max": 1000.0, "min_stake_penalty": 0.0, "per_validator_loss_at_min": 110.0}, {"K": 103, "f": 34, "G_max": 10000.0, "min_stake_penalty": 175.71428571428572, "per_validator_loss_at_min": 285.7142857142857}, {"K": 103, "f": 34, "G_max": 100000.0, "min_stake_penalty": 2747.1428571428573, "per_validator_loss_at_min": 2857.1428571428573}], "worked_example": {"K": 31, "f": 10, "G_max": 10000.0, "min_stake_penalty": 799.0909090909091, "unilateral_bribe_deterred_up_to": 909.0909090909091}}
+% election_committee.json
+% [{"n": 100, "t": 30, "rule": "static committee", "fail_random": 0.0, "fail_mobile": 1.0, "overlap": 1.0, "max_leader_share": 0.036}, {"n": 100, "t": 30, "rule": "merit-only top-K", "fail_random": 0.0, "fail_mobile": 1.0, "overlap": 0.9856427684183924, "max_leader_share": 0.035333333333333335}, {"n": 100, "t": 30, "rule": "uniform VRF", "fail_random": 0.2843333333333333, "fail_mobile": 0.2781666666666667, "overlap": 0.3123638886050901, "max_leader_share": 0.013166666666666667}, {"n": 100, "t": 30, "rule": "VRF + rest (ours)", "fail_random": 0.2781666666666667, "fail_mobile": 0.9965, "overlap": 0.0, "max_leader_share": 0.013}, {"n": 200, "t": 60, "rule": "static committee", "fail_random": 0.0, "fail_mobile": 0.9998333333333334, "overlap": 1.0, "max_leader_share": 0.0365}, {"n": 200, "t": 60, "rule": "merit-only top-K", "fail_random": 0.0, "fail_mobile": 1.0, "overlap": 0.9455178013539892, "max_leader_share": 0.035666666666666666}, {"n": 200, "t": 60, "rule": "uniform VRF", "fail_random": 0.306, "fail_mobile": 0.29483333333333334, "overlap": 0.15467093978028595, "max_leader_share": 0.0075}, {"n": 200, "t": 60, "rule": "VRF + rest (ours)", "fail_random": 0.304, "fail_mobile": 0.9846666666666667, "overlap": 0.0, "max_leader_share": 0.007666666666666666}]
+% election_leader.json
+% [{"variant": "A uniform committee + random leader", "fail": 0.2872, "fail_std": 0.00580387801388002, "overlap": 0.31066314965838226, "overlap_std": 0.0011547218404636189, "max_leader_share": 0.014100000000000001, "max_leader_share_std": 0.0004358898943540677, "gini": 0.08649, "gini_std": 0.004122489539101343, "top10_share": 0.1276, "top10_share_std": 0.0022226110770892887, "mean_leader_quality": 78.17234584209213, "mean_leader_quality_std": 0.8037956516740429, "population_quality": 78.11172551874613, "population_quality_std": 0.8436745586945134, "distinct_leaders": 100.0, "distinct_leaders_std": 0.0}, {"variant": "B VRF+rest committee + random leader", "fail": 0.28355, "fail_std": 0.007381395532011547, "overlap": 0.0, "overlap_std": 0.0, "max_leader_share": 0.014049999999999998, "max_leader_share_std": 0.0007483314773547882, "gini": 0.09068400000000001, "gini_std": 0.007807439016732693, "top10_share": 0.12920000000000004, "top10_share_std": 0.003159905061864995, "mean_leader_quality": 78.03337937994229, "mean_leader_quality_std": 0.8022923855943817, "population_quality": 78.11172551874613, "population_quality_std": 0.8436745586945134, "distinct_leaders": 100.0, "distinct_leaders_std": 0.0}, {"variant": "C VRF+rest committee + merit leader", "fail": 0.2828, "fail_std": 0.0029891470355270225, "overlap": 0.0, "overlap_std": 0.0, "max_leader_share": 0.1802, "max_leader_share_std": 0.01924149162617078, "gini": 0.9191230000000001, "gini_std": 0.009489779027985833, "top10_share": 0.9263, "top10_share_std": 0.02890562229048181, "mean_leader_quality": 93.52790477866665, "mean_leader_quality_std": 0.30736595204516115, "population_quality": 78.11172551874613, "population_quality_std": 0.8436745586945134, "distinct_leaders": 24.8, "distinct_leaders_std": 2.4}, {"variant": "D uniform committee + merit leader", "fail": 0.27985, "fail_std": 0.0029180472922829674, "overlap": 0.3099032822721809, "overlap_std": 0.000386204158174117, "max_leader_share": 0.14675, "max_leader_share_std": 0.005267826876426365, "gini": 0.9083479999999999, "gini_std": 0.0095139027743613, "top10_share": 0.9054499999999999, "top10_share_std": 0.04016322945182572, "mean_leader_quality": 93.37363053971889, "mean_leader_quality_std": 0.3338021819970594, "population_quality": 78.11172551874613, "population_quality_std": 0.8436745586945134, "distinct_leaders": 25.6, "distinct_leaders_std": 2.4166091947189146}, {"variant": "E VRF+rest + merit, fairness 0.3 + cap", "fail": 0.2828, "fail_std": 0.0029891470355270225, "overlap": 0.0, "overlap_std": 0.0, "max_leader_share": 0.01925, "max_leader_share_std": 0.0, "gini": 0.44969800000000004, "gini_std": 0.0008577680339112672, "top10_share": 0.1903, "top10_share_std": 0.00018708286933869723, "mean_leader_quality": 85.86823609955836, "mean_leader_quality_std": 0.979654342038767, "population_quality": 78.11172551874613, "population_quality_std": 0.8436745586945134, "distinct_leaders": 78.4, "distinct_leaders_std": 0.8}, {"variant": "F VRF+rest + leader d...
+% committee_weighted.json
+% {"weighted": [{"n": 100, "t": 30, "rule": "equal multipliers (uniform)", "fail": 0.2830832002099931, "hypergeometric": 0.2830832002099931}, {"n": 100, "t": 30, "rule": "five-level, worst-case placement", "fail": 0.9904087666751809}, {"n": 100, "t": 30, "rule": "two-level rho_prev=0.8, worst case", "fail": 0.553409294898359}, {"n": 100, "t": 30, "rule": "two-level rho_prev=0.5, worst case", "fail": 0.9197582885299975}, {"n": 100, "t": 30, "rule": "two-level rho_prev=0.3, worst case", "fail": 0.9274756367336275}, {"n": 200, "t": 60, "rule": "equal multipliers (uniform)", "fail": 0.2996158369144362, "hypergeometric": 0.29961583691443583}, {"n": 200, "t": 60, "rule": "five-level, worst-case placement", "fail": 0.9873033336439586}, {"n": 200, "t": 60, "rule": "two-level rho_prev=0.8, worst case", "fail": 0.5683260556769403}, {"n": 200, "t": 60, "rule": "two-level rho_prev=0.5, worst case", "fail": 0.5781997756116923}, {"n": 200, "t": 60, "rule": "two-level rho_prev=0.3, worst case", "fail": 0.5781997756116931}]}
+% ckks_bench_all.json
+% {"requests": {"ring": 32768, "log2_q": 279.5849643447745, "depth": 4, "scale_bits": 50, "first_bits": 60, "device_encrypt_seconds_mean": 0.08339797258377075, "request_ciphertext_bytes": [3147669, 3147669, 3147669], "request_total_bytes": 9443007, "batches": {"10": {"evaluation_seconds": 4.09702730178833, "per_request_seconds": 0.409702730178833, "single_key_decrypt_seconds": 0.24148964881896973, "max_abs_score_error": 5.86635184873785e-11}, "50": {"evaluation_seconds": 19.271230459213257, "per_request_seconds": 0.38542460918426513, "single_key_decrypt_seconds": 1.2282891273498535, "max_abs_score_error": 1.113784620088154e-10}, "100": {"evaluation_seconds": 38.686418294906616, "per_request_seconds": 0.38686418294906616, "single_key_decrypt_seconds": 2.4280378818511963, "max_abs_score_error": 9.471823325668538e-11}, "500": {"evaluation_seconds": 191.5503466129303, "per_request_seconds": 0.3831006932258606, "single_key_decrypt_seconds": 12.328024864196777, "max_abs_score_error": 1.2190293219305204e-10}}, "result_ciphertext_bytes": 2098833, "mask_range": 256.0, "max_abs_score_error": 1.2190293219305204e-10}, "mask_headroom": [{"scale_bits": 50, "first_modulus_bits": 60, "mask_bits": 8, "max_abs_error": 6.198375146482249e-12}, {"scale_bits": 50, "first_modulus_bits": 60, "mask_bits": 16, "max_abs_error": 1.9560630892812014e-11}, {"scale_bits": 50, "first_modulus_bits": 60, "mask_bits": 24, "max_abs_error": 2930344.2445961204}, {"scale_bits": 50, "first_modulus_bits": 60, "mask_bits": 32, "max_abs_error": 2918480611.59689}, {"scale_bits": 50, "first_modulus_bits": 60, "mask_bits": 40, "max_abs_error": 971794615972.6497}, {"scale_bits": 50, "first_modulus_bits": 60, "mask_bits": 44, "max_abs_error": 16507942565954.068}, {"scale_bits": 40, "first_modulus_bits": 60, "mask_bits": 8, "max_abs_error": 5.92098126084295e-09}, {"scale_bits": 40, "first_modulus_bits": 60, "mask_bits": 16, "max_abs_error": 9.18835518781691e-09}, {"scale_bits": 40, "first_modulus_bits": 60, "mask_bits": 24, "max_abs_error": 1.1301829416776599e-08}, {"scale_bits": 40, "first_modulus_bits": 60, "mask_bits": 32, "max_abs_error": 2.6526686269789934e-07}, {"scale_bits": 40, "first_modulus_bits": 60, "mask_bits": 40, "max_abs_error": 971831053169.1909}, {"scale_bits": 40, "first_modulus_bits": 60, "mask_bits": 44, "max_abs_error": 16507948146762.82}, {"scale_bits": 30, "first_modulus_bits": 60, "mask_bits": 8, "max_abs_error": 9.452761162265233e-06}, {"scale_bits": 30, "first_modulus_bits": 60, "mask_bits": 16, "max_abs_error": 1.238858385477215e-05}, {"scale_bits": 30, "first_modulus_bits": 60, "mask_bits": 24, "max_abs_error": 7.641574484296143e-06}, {"scale_bits": 30, "first_modulus_bits": 60, "mask_bits": 32, "max_abs_error": 1.4002308950822329e-05}, {"scale_bits": 30, "first_modulus_bits": 60, "mask_bits": 40, "max_abs_error": 0.0001848387860198808}, {"scale_bits": 30, "first_modulus_bits": 60, "mask_bits": 44, "max_abs_error": 16551381738402.262}, {"scale_bits": 25, "first_modulus...
+% ckks_fedavg_u10_s0_disjoint.json
+% {"config": {"users": 10, "seed": 0, "rounds": 50, "batch_rounds": 50, "resume": false, "partition": "disjoint", "clients": 5, "users_per_client": 2, "alpha": 0.5, "mu": 0.25, "gamma": 0.07, "beta": 0.9, "depth": 4, "ring": 32768}, "ring": 32768, "log2_q": 279.5849643447745, "layout": {"segment": 1024, "features_per_ct": 16, "cts_per_client": 14}, "client_encryption_seconds": 3.3094112873077393, "rounds_done": 50, "timing_totals": {"client_eval": 3771.142732858658, "reduce": 2569.6354410648346, "decrypt": 191.78865838050842}, "log": [{"round": 1, "seconds": 78.87893438339233, "accuracy": 0.859}, {"round": 2, "seconds": 80.58885622024536, "accuracy": 0.859}, {"round": 3, "seconds": 93.28228306770325, "accuracy": 0.859}, {"round": 4, "seconds": 185.72520899772644, "accuracy": 0.863}, {"round": 5, "seconds": 314.9932897090912, "accuracy": 0.867}, {"round": 6, "seconds": 496.7994849681854, "accuracy": 0.87}, {"round": 7, "seconds": 564.4596154689789, "accuracy": 0.872}, {"round": 8, "seconds": 416.23636412620544, "accuracy": 0.878}, {"round": 9, "seconds": 231.60529041290283, "accuracy": 0.878}, {"round": 10, "seconds": 173.6976969242096, "accuracy": 0.881}, {"round": 11, "seconds": 80.59514832496643, "accuracy": 0.883}, {"round": 12, "seconds": 81.71074271202087, "accuracy": 0.884}, {"round": 13, "seconds": 81.54137015342712, "accuracy": 0.888}, {"round": 14, "seconds": 80.0277190208435, "accuracy": 0.89}, {"round": 15, "seconds": 76.32131814956665, "accuracy": 0.893}, {"round": 16, "seconds": 78.87861013412476, "accuracy": 0.898}, {"round": 17, "seconds": 82.01444125175476, "accuracy": 0.905}, {"round": 18, "seconds": 78.95871138572693, "accuracy": 0.903}, {"round": 19, "seconds": 80.6764907836914, "accuracy": 0.904}, {"round": 20, "seconds": 81.5931887626648, "accuracy": 0.906}, {"round": 21, "seconds": 78.08226609230042, "accuracy": 0.906}, {"round": 22, "seconds": 80.81191825866699, "accuracy": 0.906}, {"round": 23, "seconds": 82.6255714893341, "accuracy": 0.908}, {"round": 24, "seconds": 79.25136113166809, "accuracy": 0.908}, {"round": 25, "seconds": 80.71993732452393, "accuracy": 0.908}, {"round": 26, "seconds": 80.66709804534912, "accuracy": 0.907}, {"round": 27, "seconds": 81.6720404624939, "accuracy": 0.906}, {"round": 28, "seconds": 124.308269739151, "accuracy": 0.905}, {"round": 29, "seconds": 452.84100317955017, "accuracy": 0.906}, {"round": 30, "seconds": 365.94314193725586, "accuracy": 0.908}, {"round": 31, "seconds": 99.34581923484802, "accuracy": 0.91}, {"round": 32, "seconds": 97.61023187637329, "accuracy": 0.911}, {"round": 33, "seconds": 95.59633159637451, "accuracy": 0.914}, {"round": 34, "seconds": 78.77903938293457, "accuracy": 0.917}, {"round": 35, "seconds": 85.52674555778503, "accuracy": 0.919}, {"round": 36, "seconds": 80.26243901252747, "accuracy": 0.921}, {"round": 37, "seconds": 75.87533569335938, "accuracy": 0.922}, {"round": 38, "seconds": 80.03685975074768, "accuracy": 0.923}, {"round": 39, "seconds": 81.80386209487915...
+% gas_anvil.json
+% {"K=4,M=10": {"SCid.register": 116462.72727272728, "SCcommittee.register": 245488.0, "SCcommittee.startEpoch": 80025.0, "SCcommittee.submitVrf": 239902.33333333334, "SCcommittee.finalizeElection": 307019.0, "SCauthreq.submitRequest": 150079.5, "SCauthresp.submitEvaluation M=10": 84684.0, "SCverify.finalize K=4": 275607.0, "SCauthresp.postResults M=10": 266428.0, "SCscore.commitScores K=4": 461839.0, "SCcheckpoint.anchor (2 batches)": 281741.0, "SCslash.reportDoubleSign": 376915.0, "SCid.revoke": 30936.0}, "K=4,M=100": {"SCid.register": 116463.12676056338, "SCcommittee.register": 245488.0, "SCcommittee.startEpoch": 80025.0, "SCcommittee.submitVrf": 244990.75, "SCcommittee.finalizeElection": 307019.0, "SCauthreq.submitRequest": 148308.39, "SCauthresp.submitEvaluation M=100": 84684.0, "SCverify.finalize K=4": 275595.0, "SCauthresp.postResults M=100": 324710.0, "SCscore.commitScores K=4": 461851.0, "SCcheckpoint.anchor (2 batches)": 281813.0, "SCslash.reportDoubleSign": 376915.0, "SCid.revoke": 30936.0}, "K=7,M=10": {"SCid.register": 116462.85714285714, "SCcommittee.register": 244875.2857142857, "SCcommittee.startEpoch": 80025.0, "SCcommittee.submitVrf": 253281.90476190476, "SCcommittee.finalizeElection": 476156.0, "SCauthreq.submitRequest": 150078.9, "SCauthresp.submitEvaluation M=10": 84684.0, "SCverify.finalize K=7": 313239.0, "SCauthresp.postResults M=10": 304052.0, "SCscore.commitScores K=7": 640578.0, "SCcheckpoint.anchor (2 batches)": 320919.0, "SCslash.reportDoubleSign": 376951.0, "SCid.revoke": 30936.0}, "K=7,M=100": {"SCid.register": 116463.13513513513, "SCcommittee.register": 244875.2857142857, "SCcommittee.startEpoch": 80025.0, "SCcommittee.submitVrf": 261670.04761904763, "SCcommittee.finalizeElection": 476156.0, "SCauthreq.submitRequest": 148308.27, "SCauthresp.submitEvaluation M=100": 84684.0, "SCverify.finalize K=7": 313233.0, "SCauthresp.postResults M=100": 362328.0, "SCscore.commitScores K=7": 640530.0, "SCcheckpoint.anchor (2 batches)": 320895.0, "SCslash.reportDoubleSign": 376915.0, "SCid.revoke": 30936.0}, "K=13,M=10": {"SCid.register": 116463.2, "SCcommittee.register": 244499.76923076922, "SCcommittee.startEpoch": 80025.0, "SCcommittee.submitVrf": 272963.74358974356, "SCcommittee.finalizeElection": 814432.0, "SCauthreq.submitRequest": 150081.3, "SCauthresp.submitEvaluation M=10": 84684.0, "SCverify.finalize K=13": 388569.0, "SCauthresp.postResults M=10": 379372.0, "SCscore.commitScores K=13": 998128.0, "SCcheckpoint.anchor (2 batches)": 426873.0, "SCslash.reportDoubleSign": 376939.0, "SCid.revoke": 30936.0}, "K=13,M=100": {"SCid.register": 116463.2, "SCcommittee.register": 244499.76923076922, "SCcommittee.startEpoch": 80025.0, "SCcommittee.submitVrf": 264586.10256410256, "SCcommittee.finalizeElection": 814432.0, "SCauthreq.submitRequest": 148308.45, "SCauthresp.submitEvaluation M=100": 84684.0, "SCverify.finalize K=13": 388557.0, "SCauthresp.postResults M=100": 437654.0, "SCscore.commitScores K=13": 998116.0, "SCcheckpoint.anchor...

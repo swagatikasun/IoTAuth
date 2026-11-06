@@ -1,0 +1,144 @@
+{
+  "assumptions": {
+    "reward_per_epoch": 1.0,
+    "value_per_reputation_point": 0.5,
+    "reputation_penalty": 20.0,
+    "ban_epochs": 100,
+    "detection_probability": 1.0
+  },
+  "table": [
+    {
+      "K": 4,
+      "f": 1,
+      "G_max": 1000.0,
+      "min_stake_penalty": 390.0,
+      "per_validator_loss_at_min": 500.0
+    },
+    {
+      "K": 4,
+      "f": 1,
+      "G_max": 10000.0,
+      "min_stake_penalty": 4890.0,
+      "per_validator_loss_at_min": 5000.0
+    },
+    {
+      "K": 4,
+      "f": 1,
+      "G_max": 100000.0,
+      "min_stake_penalty": 49890.0,
+      "per_validator_loss_at_min": 50000.0
+    },
+    {
+      "K": 7,
+      "f": 2,
+      "G_max": 1000.0,
+      "min_stake_penalty": 223.33333333333331,
+      "per_validator_loss_at_min": 333.3333333333333
+    },
+    {
+      "K": 7,
+      "f": 2,
+      "G_max": 10000.0,
+      "min_stake_penalty": 3223.3333333333335,
+      "per_validator_loss_at_min": 3333.3333333333335
+    },
+    {
+      "K": 7,
+      "f": 2,
+      "G_max": 100000.0,
+      "min_stake_penalty": 33223.333333333336,
+      "per_validator_loss_at_min": 33333.333333333336
+    },
+    {
+      "K": 13,
+      "f": 4,
+      "G_max": 1000.0,
+      "min_stake_penalty": 90.0,
+      "per_validator_loss_at_min": 200.0
+    },
+    {
+      "K": 13,
+      "f": 4,
+      "G_max": 10000.0,
+      "min_stake_penalty": 1890.0,
+      "per_validator_loss_at_min": 2000.0
+    },
+    {
+      "K": 13,
+      "f": 4,
+      "G_max": 100000.0,
+      "min_stake_penalty": 19890.0,
+      "per_validator_loss_at_min": 20000.0
+    },
+    {
+      "K": 31,
+      "f": 10,
+      "G_max": 1000.0,
+      "min_stake_penalty": 0.0,
+      "per_validator_loss_at_min": 110.0
+    },
+    {
+      "K": 31,
+      "f": 10,
+      "G_max": 10000.0,
+      "min_stake_penalty": 799.0909090909091,
+      "per_validator_loss_at_min": 909.0909090909091
+    },
+    {
+      "K": 31,
+      "f": 10,
+      "G_max": 100000.0,
+      "min_stake_penalty": 8980.90909090909,
+      "per_validator_loss_at_min": 9090.90909090909
+    },
+    {
+      "K": 61,
+      "f": 20,
+      "G_max": 1000.0,
+      "min_stake_penalty": 0.0,
+      "per_validator_loss_at_min": 110.0
+    },
+    {
+      "K": 61,
+      "f": 20,
+      "G_max": 10000.0,
+      "min_stake_penalty": 366.1904761904762,
+      "per_validator_loss_at_min": 476.1904761904762
+    },
+    {
+      "K": 61,
+      "f": 20,
+      "G_max": 100000.0,
+      "min_stake_penalty": 4651.9047619047615,
+      "per_validator_loss_at_min": 4761.9047619047615
+    },
+    {
+      "K": 103,
+      "f": 34,
+      "G_max": 1000.0,
+      "min_stake_penalty": 0.0,
+      "per_validator_loss_at_min": 110.0
+    },
+    {
+      "K": 103,
+      "f": 34,
+      "G_max": 10000.0,
+      "min_stake_penalty": 175.71428571428572,
+      "per_validator_loss_at_min": 285.7142857142857
+    },
+    {
+      "K": 103,
+      "f": 34,
+      "G_max": 100000.0,
+      "min_stake_penalty": 2747.1428571428573,
+      "per_validator_loss_at_min": 2857.1428571428573
+    }
+  ],
+  "worked_example": {
+    "K": 31,
+    "f": 10,
+    "G_max": 10000.0,
+    "min_stake_penalty": 799.0909090909091,
+    "unilateral_bribe_deterred_up_to": 909.0909090909091
+  }
+}

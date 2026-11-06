@@ -1,0 +1,8 @@
+{
+  "K=4": {"quorum": 3, "keygen_ms": 0.084, "sign_ms": 0.325, "aggregate_ms": 0.004, "verify_ms": 1.761, "valid": true},
+  "K=7": {"quorum": 5, "keygen_ms": 0.086, "sign_ms": 0.297, "aggregate_ms": 0.008, "verify_ms": 1.551, "valid": true},
+  "K=13": {"quorum": 9, "keygen_ms": 0.103, "sign_ms": 0.386, "aggregate_ms": 0.020, "verify_ms": 1.164, "valid": true},
+  "K=31": {"quorum": 21, "keygen_ms": 0.103, "sign_ms": 0.542, "aggregate_ms": 0.079, "verify_ms": 1.223, "valid": true},
+  "K=61": {"quorum": 41, "keygen_ms": 0.114, "sign_ms": 0.423, "aggregate_ms": 0.109, "verify_ms": 1.406, "valid": true},
+  "K=103": {"quorum": 69, "keygen_ms": 0.135, "sign_ms": 0.434, "aggregate_ms": 0.226, "verify_ms": 1.389, "valid": true}
+}

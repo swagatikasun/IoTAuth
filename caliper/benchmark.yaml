@@ -1,0 +1,18 @@
+test:
+  name: iotauth-submit-request
+  description: submitRequest throughput and latency for a grid of send rates and concurrent requesters
+  workers:
+    number: 8
+  rounds:
+    - label: rate-500
+      txNumber: 5000
+      rateControl: { type: fixed-rate, opts: { tps: 500 } }
+      workload: { module: workload/submitRequest.js, arguments: { chainId: 31337, authreq: "0x0000000000000000000000000000000000000000", devices: [] } }
+    - label: rate-1000
+      txNumber: 5000
+      rateControl: { type: fixed-rate, opts: { tps: 1000 } }
+      workload: { module: workload/submitRequest.js, arguments: { chainId: 31337, authreq: "0x0000000000000000000000000000000000000000", devices: [] } }
+    - label: rate-2000
+      txNumber: 5000
+      rateControl: { type: fixed-rate, opts: { tps: 2000 } }
+      workload: { module: workload/submitRequest.js, arguments: { chainId: 31337, authreq: "0x0000000000000000000000000000000000000000", devices: [] } }

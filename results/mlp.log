@@ -1,0 +1,6 @@
+0 plaintext MLP accuracy 0.9100
+{'seed': 0, 'test_samples': 1000, 'encrypted_accuracy': 0.91, 'plaintext_accuracy': 0.91, 'max_abs_logit_error': 1.271985183848301e-09, 'prediction_agreement': 1.0, 'encryption_seconds': 0.44466423988342285, 'inference_seconds': 16.21611499786377, 'multiplicative_depth_used': 3}
+1 plaintext MLP accuracy 0.9180
+2 plaintext MLP accuracy 0.9020
+3 plaintext MLP accuracy 0.9210
+4 plaintext MLP accuracy 0.9090

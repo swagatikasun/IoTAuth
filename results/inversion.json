@@ -1,0 +1,128 @@
+[
+  {
+    "batch": 1,
+    "activation": "exact",
+    "attack": "analytic",
+    "plaintext_mse": [
+      1.0406928176896989e-33,
+      1.5423951362298816e-33
+    ],
+    "plaintext_corr": [
+      1.0,
+      6.409875621278546e-17
+    ],
+    "ciphertext_only_mse": [
+      0.5049397331572203,
+      0.6334974371447794
+    ],
+    "ciphertext_only_corr": [
+      0.020560713763445353,
+      0.06837575190886515
+    ]
+  },
+  {
+    "batch": 1,
+    "activation": "linear",
+    "attack": "analytic",
+    "plaintext_mse": [
+      5.366831589645038e-34,
+      4.146406900789575e-34
+    ],
+    "plaintext_corr": [
+      1.0,
+      1.0385185452638061e-16
+    ],
+    "ciphertext_only_mse": [
+      0.3305908241045677,
+      0.365605150767823
+    ],
+    "ciphertext_only_corr": [
+      0.0017242742941359992,
+      0.06794578030151165
+    ]
+  },
+  {
+    "batch": 8,
+    "activation": "exact",
+    "attack": "optimisation",
+    "plaintext_mse": [
+      1.9751363889082425,
+      0.8516038052037336
+    ],
+    "plaintext_corr": [
+      0.3188751304990394,
+      0.18989300723429817
+    ],
+    "ciphertext_only_mse": [
+      0.7727444919915246,
+      0.4439250994055953
+    ],
+    "ciphertext_only_corr": [
+      0.0660289158612244,
+      0.02196677415857596
+    ]
+  },
+  {
+    "batch": 8,
+    "activation": "linear",
+    "attack": "optimisation",
+    "plaintext_mse": [
+      3.10750353498398,
+      2.6915012606144297
+    ],
+    "plaintext_corr": [
+      0.33997967016113906,
+      0.19964029972654143
+    ],
+    "ciphertext_only_mse": [
+      0.7977915230478222,
+      0.39338504200700614
+    ],
+    "ciphertext_only_corr": [
+      0.06234851721518144,
+      0.017101390917198023
+    ]
+  },
+  {
+    "batch": 32,
+    "activation": "exact",
+    "attack": "optimisation",
+    "plaintext_mse": [
+      1.6144156871277133,
+      0.5235293592605427
+    ],
+    "plaintext_corr": [
+      0.22665538431214444,
+      0.028990226256544942
+    ],
+    "ciphertext_only_mse": [
+      0.9696878002078129,
+      0.5247857392149116
+    ],
+    "ciphertext_only_corr": [
+      0.10901086843600587,
+      0.006370949375156711
+    ]
+  },
+  {
+    "batch": 32,
+    "activation": "linear",
+    "attack": "optimisation",
+    "plaintext_mse": [
+      2.10736675806179,
+      2.732590964666199
+    ],
+    "plaintext_corr": [
+      0.18956432299699205,
+      0.034136916901440446
+    ],
+    "ciphertext_only_mse": [
+      1.132859887152686,
+      1.396569947865199
+    ],
+    "ciphertext_only_corr": [
+      0.11051753144703053,
+      0.007417934932125476
+    ]
+  }
+]

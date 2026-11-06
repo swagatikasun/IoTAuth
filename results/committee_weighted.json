@@ -1,0 +1,66 @@
+{
+  "weighted": [
+    {
+      "n": 100,
+      "t": 30,
+      "rule": "equal multipliers (uniform)",
+      "fail": 0.2830832002099931,
+      "hypergeometric": 0.2830832002099931
+    },
+    {
+      "n": 100,
+      "t": 30,
+      "rule": "five-level, worst-case placement",
+      "fail": 0.9904087666751809
+    },
+    {
+      "n": 100,
+      "t": 30,
+      "rule": "two-level rho_prev=0.8, worst case",
+      "fail": 0.553409294898359
+    },
+    {
+      "n": 100,
+      "t": 30,
+      "rule": "two-level rho_prev=0.5, worst case",
+      "fail": 0.9197582885299975
+    },
+    {
+      "n": 100,
+      "t": 30,
+      "rule": "two-level rho_prev=0.3, worst case",
+      "fail": 0.9274756367336275
+    },
+    {
+      "n": 200,
+      "t": 60,
+      "rule": "equal multipliers (uniform)",
+      "fail": 0.2996158369144362,
+      "hypergeometric": 0.29961583691443583
+    },
+    {
+      "n": 200,
+      "t": 60,
+      "rule": "five-level, worst-case placement",
+      "fail": 0.9873033336439586
+    },
+    {
+      "n": 200,
+      "t": 60,
+      "rule": "two-level rho_prev=0.8, worst case",
+      "fail": 0.5683260556769403
+    },
+    {
+      "n": 200,
+      "t": 60,
+      "rule": "two-level rho_prev=0.5, worst case",
+      "fail": 0.5781997756116923
+    },
+    {
+      "n": 200,
+      "t": 60,
+      "rule": "two-level rho_prev=0.3, worst case",
+      "fail": 0.5781997756116931
+    }
+  ]
+}

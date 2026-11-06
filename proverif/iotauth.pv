@@ -1,0 +1,83 @@
+(* IoTAuth: request submission, masked threshold decryption and result delivery *)
+
+type skey.
+type pkey.
+type sskey.
+type spkey.
+type coins.
+type nonce.
+
+free c: channel.
+free logch: channel [private].
+
+fun pk(skey): pkey.
+fun aenc(bitstring, pkey, coins): bitstring.
+reduc forall x: bitstring, k: skey, r: coins; adec(aenc(x, pk(k), r), k) = x.
+
+fun spk(sskey): spkey.
+fun sign(bitstring, sskey): bitstring.
+reduc forall m: bitstring, k: sskey; checksign(sign(m, k), spk(k)) = m.
+
+fun score(bitstring): bitstring.
+fun mask(bitstring, nonce): bitstring.
+reduc forall s: bitstring, m: nonce; unmask(mask(s, m), m) = s.
+
+fun heval(bitstring): bitstring.
+reduc forall x: bitstring, m: nonce, k: skey, r: coins;
+  tdec(heval(aenc((x, m), pk(k), r)), k) = mask(score(x), m).
+
+free fd: bitstring [private].
+free did: bitstring.
+
+table used(nonce).
+
+event Sent(bitstring, bitstring, bitstring, nonce).
+event Logged(bitstring, bitstring, bitstring, nonce).
+event Posted(bitstring, bitstring).
+event Accepted(bitstring, bitstring).
+
+query attacker(fd).
+query attacker(score(fd)).
+query d: bitstring, x: bitstring, t: bitstring, n: nonce;
+  event(Logged(d, x, t, n)) ==> event(Sent(d, x, t, n)).
+query d: bitstring, x: bitstring, t: bitstring, n: nonce;
+  inj-event(Logged(d, x, t, n)) ==> inj-event(Sent(d, x, t, n)).
+query x: bitstring, z: bitstring;
+  event(Accepted(x, z)) ==> event(Posted(x, z)).
+
+let Device(skD: sskey, pkSC: pkey, pkC: spkey) =
+  new m: nonce;
+  new r: coins;
+  new n: nonce;
+  new t: bitstring;
+  let ct = aenc((fd, m), pkSC, r) in
+  event Sent(did, ct, t, n);
+  out(c, (did, ct, t, n, sign((did, ct, t, n), skD)));
+  in(c, (=ct, z: bitstring, cert: bitstring));
+  if checksign(cert, pkC) = (ct, z) then
+  let s = unmask(z, m) in
+  event Accepted(ct, z).
+
+let AuthReq(pkD: spkey) =
+  in(c, (d: bitstring, ct: bitstring, t: bitstring, n: nonce, sg: bitstring));
+  if checksign(sg, pkD) = (d, ct, t, n) then
+  get used(=n) in 0 else
+  insert used(n);
+  event Logged(d, ct, t, n);
+  out(logch, ct);
+  out(c, ct).
+
+let Committee(skSC: skey, skC: sskey) =
+  in(logch, ct: bitstring);
+  let z = tdec(heval(ct), skSC) in
+  event Posted(ct, z);
+  out(c, (ct, z, sign((ct, z), skC))).
+
+process
+  new skSC: skey;
+  new skC: sskey;
+  new skD: sskey;
+  out(c, pk(skSC));
+  out(c, spk(skC));
+  out(c, spk(skD));
+  ( (!Device(skD, pk(skSC), spk(skC))) | (!AuthReq(spk(skD))) | (!Committee(skSC, skC)) )

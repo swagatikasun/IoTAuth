@@ -1,0 +1,26 @@
+{
+ "args": {
+  "ring": 32768,
+  "depth": 3,
+  "scale": 59,
+  "first": 60,
+  "precision": 80,
+  "repeats": 5
+ },
+ "log2_q": 323.0,
+ "ring": 32768,
+ "device_encrypt_seconds_mean": 0.40975046157836914,
+ "device_encrypt_seconds": [
+  0.3763611316680908,
+  0.39589619636535645,
+  0.4221324920654297,
+  0.4306037425994873,
+  0.42375874519348145
+ ],
+ "request_ciphertext_bytes": [
+  4196281,
+  4196281,
+  4196281
+ ],
+ "request_total_bytes": 12588843
+}

@@ -1,0 +1,21 @@
+{
+  "hidden": 32,
+  "rounds": 200,
+  "lr": 0.05,
+  "beta": 0.9,
+  "plaintext_federated_accuracy": [
+    0.9119999999999999,
+    0.007582875444051557
+  ],
+  "encrypted_inference": {
+    "seed": 0,
+    "test_samples": 1000,
+    "encrypted_accuracy": 0.91,
+    "plaintext_accuracy": 0.91,
+    "max_abs_logit_error": 1.271985183848301e-09,
+    "prediction_agreement": 1.0,
+    "encryption_seconds": 0.44466423988342285,
+    "inference_seconds": 16.21611499786377,
+    "multiplicative_depth_used": 3
+  }
+}
