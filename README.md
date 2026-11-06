@@ -1,6 +1,6 @@
 # IoTAuth artifact
 
-Code, contracts and scripts used for the revised evaluation of "IoTAuth: A Secure and Scalable Framework for Decentralized IoT Authentication".
+Code, contracts and scripts used for the evaluation of "IoTAuth: A Secure and Scalable Framework for Decentralized IoT Authentication".
 
 ## Layout
 
