@@ -23,6 +23,7 @@ Code, contracts and scripts used for the evaluation of "IoTAuth: A Secure and Sc
 | `ml/decision_params.py` | Masked threshold decryption with noise flooding (OpenFHE built with 128-bit native integers) |
 | `ml/make_tables.py` | Collects all result files into `results/tables.tex` |
 | `election/committee.py` | Exact committee failure probability (uniform and weighted election) |
+| `election/committee_grid.py` | Weighted rule at K = 13, 31, 61 and t/n = 0.2, 0.3 |
 | `election/simulate.py` | Election ablation: committee rules and leader rules, including the fairness corrections |
 | `election/incentive.py` | Numeric example for the slashing analysis |
 | `contracts/` | The nine contracts (Foundry), BLS12-381 verification through EIP-2537 precompiles, Groth16 verifier, tests |
@@ -83,7 +84,7 @@ cd ml && python3 dp_fedavg.py --clip 5 && python3 inversion.py --trials 5 && pyt
 Block 4 (election and incentives):
 
 ```
-cd election && python3 committee.py --part all && python3 simulate.py --part committee && python3 simulate.py --part leader && python3 incentive.py
+cd election && python3 committee.py --part all && python3 committee_grid.py && python3 simulate.py --part committee && python3 simulate.py --part leader && python3 incentive.py
 ```
 
 Block 5 (contracts; needs Foundry):

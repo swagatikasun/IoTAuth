@@ -128,9 +128,8 @@ def table_uniform():
 
 
 def chernoff_old(k, ratio):
-    delta = (1 / 3) / ratio - 1
-    mu = ratio * k
-    return math.exp(-delta * delta * mu / (2 + delta))
+    gap = 1 / 3 - ratio
+    return math.exp(-k * gap * gap / 3)
 
 
 def main():
